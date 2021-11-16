@@ -9,6 +9,10 @@ app = Flask(__name__)
 def index():
     return render_template("index.html")
 
+@app.route('/sophie')
+def sophie():
+    return render_template("sophie.html")
+
 # runs the application on the development server
 if __name__ == "__master__":
     app.run()
