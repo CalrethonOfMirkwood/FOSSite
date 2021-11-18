@@ -14,6 +14,10 @@ def index():
 def sophie():
     return render_template("sophie.html", SilmData=getSilmMeme())
 
+@app.route('/krish_abt/')
+def krish_abt():
+    return render_template("krish_abt.html")
+
 # runs the application on the development server
 if __name__ == "__master__":
     app.run()
