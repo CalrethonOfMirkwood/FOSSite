@@ -14,14 +14,26 @@ def index():
 def sophie():
     return render_template("sophie.html", SilmData=getSilmMeme())
 
-@app.route('/krish_abt/')
+@app.route('/sophiealt/')
+def sophiealt():
+    return render_template("sophiealt.html")
+
+@app.route('/krish/')
 def krish_abt():
     return render_template("krish_abt.html")
 
-@app.route('/michaelAbout/')
+@app.route('/michael/')
 def michaelAbout():
     return render_template("michaelAbout.html")
+
+@app.route('/valerie/')
+def valerie():
+    return render_template("val_about_me.html")
 
 # runs the application on the development server
 if __name__ == "__master__":
     app.run()
+
+@app.errorhandler(500)
+def server_error(e):
+    return render_template('500.html'), 500

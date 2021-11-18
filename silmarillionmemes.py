@@ -1,11 +1,15 @@
-import requests, json
+import requests
 
 def getReddit():
-    try:
-        request = requests.get(f'https://www.reddit.com/r/silmarillionmemes/top.json?limit=1&t=day', headers = {'User-agent': 'bruh'})
-    except:
-        print('An Error Occurred')
+    request = requests.get(f'https://www.reddit.com/r/silmarillionmemes/top.json?limit=1&t=day', headers = {'User-agent': 'bruh'})
     return request.json()
+
+def getPostTitles(redditdata):
+    posts = []
+    for post in redditdata['data']['children']:
+        x = post['data']['title']
+        posts.append(x)
+    return posts
 
 def getResults(redditdata):
     myDict = {}
@@ -15,6 +19,6 @@ def getResults(redditdata):
     return (rtitle, rurl)
 
 def getSilmMeme():
-    SilmarillionMeme = getReddit()
-    (title, url) = getResults(SilmarillionMeme)
+    redditdata = getReddit()
+    (title, url) = getResults(redditdata)
     return (title, url)
