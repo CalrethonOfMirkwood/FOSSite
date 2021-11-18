@@ -18,6 +18,10 @@ def sophie():
 def krish_abt():
     return render_template("krish_abt.html")
 
+@app.route('/michaelAbout/')
+def michaelAbout():
+    return render_template("michaelAbout.html")
+
 # runs the application on the development server
 if __name__ == "__master__":
     app.run()
