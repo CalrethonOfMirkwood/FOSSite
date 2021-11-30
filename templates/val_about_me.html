@@ -5,7 +5,20 @@
     <title>Valerie, aka DistilledVinegar</title>
 </head>
 
-<body>
+<body onload="ourGod()">
+<audio id="ourGod">
+    <source src="/static/ourgod.mp3" type="audio/mpeg">
+</audio>
     <h1>Valerie, aka DistilledVinegar</h1>
+<p>
+    Problematic very often. LXDE enthusiast. Banned from unsupervised computer usage.
+</p>
+<script>
+    var ourgod = document.getElementById("ourGod");
+    function ourGod() {
+        ourgod.play();
+    }
+</script>
 </body>
+
 </html>

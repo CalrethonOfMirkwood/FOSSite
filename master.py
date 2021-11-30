@@ -37,3 +37,7 @@ if __name__ == "__master__":
 @app.errorhandler(500)
 def server_error(e):
     return render_template('500.html'), 500
+
+@app.errorhandler(404)
+def server_error(e):
+    return render_template('404.html'), 404
