@@ -8,18 +8,25 @@
             font-family: 'Liberation Mono', monospace;
             color: midnightblue;
             background-color: azure;
+            padding: 5%;
+            align-items: center;
         }
     </style>
 </head>
 
 <body>
+    <audio autoplay>
+        <source src="{{ noldolante }}">
+    </audio>
+
     <h1>Sophie, aka CalrethilOfMirkwood</h1>
-    <img src="/static/sophiephoto.jpg">
+    <img src="/static/sophiephoto.jpg" alt="my passport photo stares into your soul">
+    <p>I like FOSS and Tolkien.</p>
 
     <br><br>
 
     <p>The current daily top post of r/silmarillionmemes:</p>
-    <h2 style="font-style: italic">{{SilmData[0]}}</h2>
-    <img src="{{SilmData[1]}}" width="100%">
+    <h2 style="font-style: italic">{{ SilmData[0] }}</h2>
+    <img src="{{ SilmData[1] }}" width="100%" alt="Be he foe or friend, be he foul or clean, brood of Morgoth or bright Vala, Elda or Maia or Aftercomer, Man yet unborn upon Middle-earth, neither law, nor love, nor league of swords, dread nor danger, not Doom itself, shall defend him from Fëanor, and Fëanor's kin, whoso hideth or hoardeth, or in hand taketh, finding keepeth or afar casteth a Silmaril.  This swear we all: death we will deal him ere Day's ending, woe unto world's end! Our word hear thou, Eru Allfather!  To the everlasting Darkness doom us if our deed faileth.  On the holy mountain hear in witness and our vow remember, Manwë and Varda!">
 </body>
 </html>

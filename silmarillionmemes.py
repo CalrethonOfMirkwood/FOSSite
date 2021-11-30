@@ -1,4 +1,4 @@
-import requests
+import requests, random
 
 def getReddit():
     request = requests.get(f'https://www.reddit.com/r/silmarillionmemes/top.json?limit=1&t=day', headers = {'User-agent': 'bruh'})
@@ -22,3 +22,28 @@ def getSilmMeme():
     redditdata = getReddit()
     (title, url) = getResults(redditdata)
     return (title, url)
+
+def noldolante():
+    songs = ('/static/sophiemusic/badapple.mp3',
+             '/static/sophiemusic/beastars.mp3',
+             '/static/sophiemusic/BLOODYSTREAM.mp3',
+             '/static/sophiemusic/connect.mp3',
+             '/static/sophiemusic/dadadadatenshi.mp3',
+             '/static/sophiemusic/daddy.mp3',
+             '/static/sophiemusic/fmaending.mp3',
+             '/static/sophiemusic/fmaopening.mp3',
+             '/static/sophiemusic/insaeng.mp3',
+             '/static/sophiemusic/mincho.mp3',
+             '/static/sophiemusic/klk.mp3',
+             '/static/sophiemusic/onewingedangeladvent.mp3',
+             '/static/sophiemusic/opm.mp3',
+             '/static/sophiemusic/pandf.mp3',
+             '/static/sophiemusic/parttimer.mp3',
+             '/static/sophiemusic/puff.mp3',
+             '/static/sophiemusic/requiem.mp3',
+             '/static/sophiemusic/resonance.mp3',
+             '/static/sophiemusic/sasageyo.mp3',
+             '/static/sophiemusic/takingthehobbitstoisengard.mp3',
+             '/static/sophiemusic/yumiya.mp3')
+
+    return random.choice(songs)

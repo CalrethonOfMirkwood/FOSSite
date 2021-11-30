@@ -1,6 +1,6 @@
 # import "packages" from flask
 from flask import Flask, render_template
-from silmarillionmemes import getSilmMeme
+from silmarillionmemes import getSilmMeme, noldolante
 
 # create a Flask instance
 app = Flask(__name__)
@@ -12,11 +12,11 @@ def index():
 
 @app.route('/sophie/')
 def sophie():
-    return render_template("sophie.html", SilmData=getSilmMeme())
+    return render_template("sophie.html", SilmData=getSilmMeme(), noldolante=noldolante())
 
 @app.route('/sophiealt/')
 def sophiealt():
-    return render_template("sophiealt.html")
+    return render_template("sophiealt.html", noldolante=noldolante())
 
 @app.route('/krish/')
 def krish_abt():
