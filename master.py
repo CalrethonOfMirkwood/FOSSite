@@ -10,25 +10,25 @@ app = Flask(__name__)
 def index():
     return render_template("index.html")
 
-@app.route('/sophie/')
+@app.route('/abt_pages/sophie/')
 def sophie():
-    return render_template("sophie.html", SilmData=getSilmMeme(), noldolante=noldolante())
+    return render_template("abt_pages/sophie.html", SilmData=getSilmMeme(), noldolante=noldolante())
 
-@app.route('/sophiealt/')
+@app.route('/abt_pages//sophiealt/')
 def sophiealt():
-    return render_template("sophiealt.html", noldolante=noldolante())
+    return render_template("abt_pages/sophiealt.html", noldolante=noldolante())
 
-@app.route('/krish/')
+@app.route('/abt_pages//krish/')
 def krish_abt():
-    return render_template("krish_abt.html")
+    return render_template("abt_pages/krish_abt.html")
 
-@app.route('/michael/')
+@app.route('/abt_pages//michael/')
 def michaelAbout():
-    return render_template("michaelAbout.html")
+    return render_template("abt_pages/michaelAbout.html")
 
-@app.route('/valerie/')
+@app.route('/abt_pages//valerie/')
 def valerie():
-    return render_template("val_about_me.html")
+    return render_template("abt_pages/val_about_me.html")
 
 # runs the application on the development server
 if __name__ == "__master__":
