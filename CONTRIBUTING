@@ -1,1 +1,11 @@
-UPDATE BEFORE YOU COMMIT
+1. PULL BEFORE YOU PUSH
+
+2: Make sure your .gitignore is up-to-date and synchronized. .idea files must never be pushed.
+
+3: If you didn't create it, don't commit it.
+
+4: Consult either GH Admin or original author of code (ideally both) before making any merge.
+
+5: Commit to a new branch if a feature is only partially complete. 5.1: Remember that branching is only temporary. Be sure to merge any new features into the main branch as soon as they are functional.
+
+6: Use issues to be clear on which branches you are and aren't supposed to access.
