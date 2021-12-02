@@ -14,19 +14,19 @@ def index():
 def sophie():
     return render_template("abt_pages/sophie.html", SilmData=getSilmMeme(), noldolante=noldolante())
 
-@app.route('/abt_pages//sophiealt/')
+@app.route('/abt_pages/sophiealt/')
 def sophiealt():
     return render_template("abt_pages/sophiealt.html", noldolante=noldolante())
 
-@app.route('/abt_pages//krish/')
+@app.route('/abt_pages/krish/')
 def krish_abt():
     return render_template("abt_pages/krish_abt.html")
 
-@app.route('/abt_pages//michael/')
+@app.route('/abt_pages/michael/')
 def michaelAbout():
     return render_template("abt_pages/michaelAbout.html")
 
-@app.route('/abt_pages//valerie/')
+@app.route('/abt_pages/valerie/')
 def valerie():
     return render_template("abt_pages/val_about_me.html")
 
