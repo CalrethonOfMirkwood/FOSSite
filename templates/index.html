@@ -1,13 +1,18 @@
 <!DOCTYPE html>
+{% extends "layouts/layout.html" %}
 <html lang="en">
+{% block meta%}
 <head>
     <meta charset="UTF-8">
     <title>FOSSite Index</title>
 </head>
+{% endblock %}
+{% block content %}
 <body>
-    <a href="/abt_pages/sophie">Sophie About</a>
-    <a href="/abt_pages/krish">Krish About</a>
-    <a href="/abt_pages/michael">Michael About</a>
-    <a href="/abt_pages/valerie">Valerie About</a>
+    <a href= {{ url_for('sophie.sophie') }}>Sophie About</a>
+    <a href={{ url_for('krish.krish') }}>Krish About</a>
+    <a href="/michael">Michael About</a>
+    <a href="/valerie">Valerie About</a>
 </body>
+{% endblock %}
 </html>

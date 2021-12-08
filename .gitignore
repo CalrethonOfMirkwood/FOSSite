@@ -1,1 +1,6 @@
 /.idea/
+node_modules
+/node_modules/.package-lock.json
+/static/scss/custom.css.map
+/package.json
+/package-lock.json

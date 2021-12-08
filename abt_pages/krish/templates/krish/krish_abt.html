@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+{% extends "layouts/layout.html" %}
+{% block content %}
+<html lang="en">
+<script>
+    function changeImage() {
+        console.log ("This click function works")
+        if (document.getElementById("profile_img").src = "{{url_for('krish.static', filename='Krish_mask.jpg')}}")
+        {
+            document.getElementById("profile_img").src = "{{url_for('krish.static', filename='Krish_noMask.jpg')}}";
+            console.log ("it works kinda");
+        }
+        else
+        {
+            document.getElementById("profile_img").src = "{{url_for('krish.static', filename='Krish_mask.jpg')}}";
+            console.log ("bruhhh");
+        }
+    }
+</script>
+<head>
+    <meta charset="UTF-8">
+    <title>About Me</title>
+</head>
+<body>
+    <div class="hero-image">
+        <div class="hero-text">
+            <h1>Krishnadev Lakshminarayanan</h1>
+        </div>
+    </div>
+
+
+    <div class ="row" id="content_main"  >
+        <div class="col-auto ml-left mr-auto" id="desc_header" >
+            <p >Design Manager @FOSSsite, Scrum Master @Intermission</p>
+        </div>
+        <div class="col-auto ml-auto mr-right" >
+            <img src="{{url_for('krish.static', filename='Krish_mask.jpg')}}" id = "profile_img" width="400px" height="400px" onclick="changeImage()">
+        </div>
+    </div>
+
+
+
+
+</body>
+<style>
+    h1 {
+        font-size: 3em;
+    }
+
+    #content_main{
+        background-color: black;
+        color: whitesmoke;
+    }
+
+    p{
+        color: whitesmoke;
+    }
+
+    /* Pads image, centers it in  background*/
+    #profile_img {
+        padding: 10%;
+    }
+    /* Pads image, centers it in  background*/
+    #desc_header{
+        font-size: 2em;
+        padding-top: 100px;
+        width: 40%;
+    }
+    /* The hero image */
+    .hero-image {
+        /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/abt_pages/krish/static/Krish_mask.jpg");
+
+        /* Set a specific height */
+        height: 1000px;
+
+        /* Position and center the image to scale nicely on all screens */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    }
+
+    /* Place text in the middle of the image */
+    .hero-text {
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+    }
+</style>
+</html>
+{% endblock%}
