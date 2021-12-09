@@ -8,6 +8,27 @@
             background-color: #eadac5;
         }
     </style>
+
+    <script>
+        var ourgod = document.getElementById("ourGod");
+        function ourGod() {
+            ourgod.play();
+        }
+
+        var bruh = "sussy";
+
+        function ImageToggle(){
+            console.log("jokar")
+            if (bruh == "sussy") {
+                document.getElementById("image").src = "/static/jokerval.png";
+                bruh = "baka"
+            }
+            else if (bruh == "baka") {
+                document.getElementById("image").src = "/static/valerie_drawing.png";
+                bruh = "sussy"
+            }
+        }
+    </script>
 </head>
 
 <body onload="ourGod()">
@@ -21,14 +42,7 @@
     Problematic very often. LXDE enthusiast. Banned from unsupervised computer usage.
 </p>
 <a href="https://docs.google.com/document/d/1XOe0uETl0PM_4bMLgZH6xaBeHtTIXsf2LWUFkF-1XUw/edit?usp=sharing">My journal.</a>
-<img src="/About%20Pages/sophie/static/valerie_drawing.png">
-<script>
-    var ourgod = document.getElementById("ourGod");
-    function ourGod() {
-        ourgod.play();
-
-    }
-</script>
+<img id="image" onclick=ImageToggle(); src="/static/valerie_drawing.png">
 </body>
 
 </html>

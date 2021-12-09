@@ -12,15 +12,32 @@
             align-items: center;
         }
     </style>
-</head>
+    <script>
+        console.log("currently playing:"+"{{ noldolante }}")
 
+        var jailcrow = "sussy";
+
+        function ImageToggle(){
+            if (jailcrow == "sussy") {
+                console.log("sussy")
+                document.getElementById("image").src = "/static/thranduil.png";
+                jailcrow = "baka"
+            }
+            else if (jailcrow == "baka") {
+                console.log("baka")
+                document.getElementById("image").src = "/static/sophiephoto.jpg";
+                jailcrow = "sussy"
+            }
+        }
+    </script>
+</head>
 <body>
     <audio autoplay>
         <source src="{{ noldolante }}">
     </audio>
 
     <h1>Sophie, aka CalrethilOfMirkwood</h1>
-    <img src= "static/sophiephoto.jpg" alt="my passport photo stares into your soul">
+    <img id="image" onclick=ImageToggle(); src="/static/sophiephoto.jpg" width="600">
     <p>I like FOSS and Tolkien.</p>
     <a href="https://docs.google.com/document/d/1pevIAx6l1T2paGKv7fC8DbOfuA8IS8x0SDsPHH6GK3E/edit?usp=sharing">My AP CSP Tri2 Journal</a>
 
