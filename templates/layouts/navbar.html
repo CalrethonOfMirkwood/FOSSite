@@ -1,0 +1,40 @@
+<!-- Navigation Bar from bootstrap
+This HTML is setup as a fragment allowing it to be "included" by other HTML files via Jinja2
+-->
+<!-- Bootstrap Navigation Code -->
+<nav class="navbar navbar-expand-lg navbar-dark" style="background: var(--primary);" >
+    <a class="navbar-brand" id="main_title" href="http://127.0.0.1:5000/">
+        FOSSite
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- Bootstrap menus -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto"?>
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarModel" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    About Us
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href={{ url_for('krish_abt') }}>Krish</a>
+                    <a class="dropdown-item" href={{ url_for('sophie') }}>Sophie</a>
+                    <a class="dropdown-item" href="/abt_pages/michael">Michael</a>
+                    <a class="dropdown-item" href="/abt_pages/valerie">Valerie</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <style>
+        #navbarSupportedContent {
+            max-width:45%;
+        }
+
+        #signin {
+            position:absolute;
+            left: 90%
+
+        }
+    </style>
+</nav>

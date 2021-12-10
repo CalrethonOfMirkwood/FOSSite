@@ -9,10 +9,70 @@
 {% endblock %}
 {% block content %}
 <body>
-    <a href= "/abt_pages/sophie">Sophie About</a>
-    <a href="/abt_pages/krish">Krish About</a>
-    <a href="/abt_pages/michael">Michael About</a>
-    <a href="/abt_pages/valerie">Valerie About</a>
+    <div class="hero-image">
+        <div class="hero-text">
+            <h1 style="font-size:6em;"><strong>Welcome To FOSSite</strong></h1>
+            <p id="quote">"Either the users control the program or the program controls the users"</p>
+            <a class="j_btn">Read More</a>
+        </div>
+    </div>
+    <style>
+        body, html {
+        height: 100%;
+        }
+
+        /* The hero image */
+        .hero-image {
+        /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("static/homepg_img.jpg");
+
+        /* Set a specific height */
+        height: 95%;
+
+        /* Position and center the image to scale nicely on all screens */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        }
+
+        /* Place text in the middle of the image */
+        .hero-text {
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        }
+        #quote{
+            color: var(--primary);
+            font-size: 2em;
+        }
+        .j_btn{
+            background-color:  var(--button); /* Purple */
+            border: none;
+            color: black;
+            padding: 10px 22px;
+            font-size: 14px;
+            border-radius: 12px;
+            position:relative;
+            justify-content: right;
+            height:50px;
+            margin-top:12%;
+
+        }
+
+        .j_btn:hover {
+            background-color: var(--btn_hov); /* Light Purple */
+            border: none;
+            color: white;
+            padding: 10px 32px;
+            font-size: 18px;
+            border-radius: 12px;
+            position: relative;
+        }
+    </style>
 </body>
 {% endblock %}
 </html>

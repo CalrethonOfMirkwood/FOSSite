@@ -37,16 +37,36 @@
 
     <div class ="row" id="content_main"  >
         <div class="col-auto ml-left mr-auto header-bg" id="desc_header" >
-            <p >Design Manager @FOSSsite, Scrum Master @Intermission</p>
+            <p >Design Manager @FOSSsite, Scrum Master @Intermission. Science is pretty cool.</p>
+            <a class="j_btn" href="https://docs.google.com/document/d/1Yd2N04Y8EEOolwOF8eyXlXfu_NiOpqE99vexkLGeswg/edit?usp=sharing">Journal</a>
+            <a class="j_btn" href="https://github.com/CalrethilOfMirkwood/FOSSite/wiki/Create-Tasks#krishs-create-task">Create Task</a>
+            <a class="j_btn" href="https://github.com/CalrethilOfMirkwood/FOSSite/issues/assigned/KrishnadevL">Github Issues</a>
         </div>
         <div class="col-auto ml-auto mr-right" >
-            <img src="/static/Krish_mask.jpg" id = "profile_img" width="400px" height="400px" onclick=changeImage();>
+            <img src="/static/Krish_mask.jpg" id = "profile_img" width="500px" height="500px" onclick=changeImage();>
+            <p>Click on image to get a picture of me without the mask</p>
         </div>
+
     </div>
-    <div class ="row "   >
+    <div class ="row"   >
         <div class="col-auto ml-left mr-auto text-dark"  >
-            <p class="text-">Design Manager @FOSSsite, Scrum Master @Intermission</p>
+
         </div>
+
+    </div>
+    <div class ="row">
+        <div class="col-12" style="text-align: center;">
+            <h1 style="text-align:center;"><strong>What to watch right now!</strong></h1>
+            <p style="font-size: 2em; color:black;">Here's an example of a feature from my last website, a set of action movies displaying from a public IMDB API<p>
+        </div>
+
+        <!-- Input and Content -->
+        <div >
+            <div class="col-md">
+                <p class="setup" style="text-align:center; color: black">{{movie_choice}}</p>
+            </div>
+        </div>
+
     </div>
 
 
@@ -66,7 +86,29 @@
     p{
         color: whitesmoke;
     }
+    .j_btn{
+        background-color:  var(--button); /* Purple */
+        border: none;
+        color: black;
+        padding: 10px 22px;
+        font-size: 14px;
+        border-radius: 12px;
+        position:relative;
+        justify-content: right;
+        height:50px;
+        margin-top:12%;
 
+    }
+
+    .j_btn:hover {
+        background-color: var(--btn_hov); /* Light Purple */
+        border: none;
+        color: white;
+        padding: 10px 32px;
+        font-size: 18px;
+        border-radius: 12px;
+        position:relative;
+    }
     /* Pads image, centers it in  background*/
     #profile_img {
         padding: 10%;
@@ -74,7 +116,7 @@
     /* Pads image, centers it in  background*/
     #desc_header{
         font-size: 2em;
-        padding-top: 100px;
+        padding-top: 200px;
         width: 40%;
         padding-left: 20px;
     }
