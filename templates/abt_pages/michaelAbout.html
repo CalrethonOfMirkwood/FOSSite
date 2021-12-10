@@ -1,8 +1,30 @@
 <!DOCTYPE html>
+{% include "/layouts/layout.html" %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>About michaelScopic</title>
+    <style>
+        body {
+            background-color: deeppink;
+            font-family: "Comic Sans MS";
+        }
+    </style>
+    <script>
+        var sus = "minecraft";
+
+        function ImageToggle(){
+            console.log("sus")
+            if (sus == "minecraft") {
+                document.getElementById("image").src = "/static/owo.jpeg";
+                sus = "fortnite"
+            }
+            else if (sus == "fortnite") {
+                document.getElementById("image").src = "/static/img.png";
+                sus = "minecraft"
+            }
+        }
+    </script>
 </head>
 
 <body>
@@ -13,4 +35,5 @@
     Discord: Michael_Scopic#0102 <br>
     GitHub: michaelScopic <br>
 </p>
+<img id="image" onclick=ImageToggle(); src="/static/img.png">
 </html>
