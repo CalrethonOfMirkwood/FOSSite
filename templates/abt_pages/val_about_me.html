@@ -11,9 +11,17 @@
     </style>
 
     <script>
-        var ourgod = document.getElementById("ourGod");
-        function ourGod() {
+        const ourgod = document.getElementById("ourGod");
+
+        const bible_url = "https://bible-api.com/john%203:16";
+        async function getVerse() {
+            const response = await fetch(bible_url);
+            const data = await response.json();
+            alert(data['verses']['0']['text']);
             ourgod.play();
+
+        }
+        function ourGod() {
         }
 
         var bruh = "sussy";
@@ -42,8 +50,9 @@
 <p>
     Problematic very often. LXDE enthusiast. Banned from unsupervised computer usage.
 </p>
-<a href="https://docs.google.com/document/d/1XOe0uETl0PM_4bMLgZH6xaBeHtTIXsf2LWUFkF-1XUw/edit?usp=sharing">My journal.</a>
 <img id="image" onclick=ImageToggle(); src="/static/valerie_drawing.png">
+<a href="https://docs.google.com/document/d/1XOe0uETl0PM_4bMLgZH6xaBeHtTIXsf2LWUFkF-1XUw/edit?usp=sharing">My journal.</a>
+<button type="button" onclick="getVerse()">Procure forth the Lord's Word. (via API)</button>
 </body>
 
 </html>
