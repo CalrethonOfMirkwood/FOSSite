@@ -6,6 +6,7 @@ FOSSite was created with the hope of exposing the general public to the idea of 
 # Table of Contents
 - [The People](#the-people)
 - [Week 1](#week-1)
+- [Week 2](#week-2)
 
 ## The People
 | Name | Role | Github Profile | Journal | Issues | Scrum Board | Commit History |
@@ -23,3 +24,13 @@ Most of week 1 was spent on ideation and planning the course.
 | Valreie | Valerie created the syllabus (see above) and also made custom [error pages](https://github.com/CalrethilOfMirkwood/FOSSite/blob/master/templates) and the [about me page](https://github.com/CalrethilOfMirkwood/FOSSite/issues/3).  It has music and other customization. |
 | Michael | Michael also worked on the aforementioned syllabus and made his [about page](https://github.com/CalrethilOfMirkwood/FOSSite/issues/1).  He also looked into ideas for deployment, likely on his own server at home. |
 | Krish | Krish spent most of his time on wireframing the site, creating a prototype for the [front page](https://github.com/CalrethilOfMirkwood/FOSSite/issues/5#issuecomment-985774706) + [lesson page template](https://github.com/CalrethilOfMirkwood/FOSSite/issues/5#issuecomment-985775037).  To do this he studied bootstrap and CSS. Basic [Directory](https://github.com/CalrethilOfMirkwood/FOSSite/tree/master/templates) was also added to [about me pages](https://github.com/CalrethilOfMirkwood/FOSSite/tree/master/templates/abt_pages) This is planning to be expanded upon by adding seperate python file directory for the about me page and using blueprints. |
+
+# Week 2
+Week Summary: Added fully functional about me pages, created navbar to extend across all pages, created base color pallete for website in layout.html, created front landing page 
+| Name | Task |
+| - | :--- |
+| Sophie | NEEDS WRITEUP |
+| Valreie | NEEDS WRITEUP |
+| Michael | NEEDS WRITEUP|
+| Krish | Created basic [layout assigned colors](https://github.com/CalrethilOfMirkwood/FOSSite/blob/0716e9eba289887a8b05296f971ef628619c0b3a/templates/layouts/layout.html#L26-L33) based on website theme, Created navbar with [dropdown for webpage](https://github.com/CalrethilOfMirkwood/FOSSite/blob/0716e9eba289887a8b05296f971ef628619c0b3a/templates/layouts/navbar.html#L20-L25), Added old [web api](url) to about page and mask [image toggle](https://github.com/CalrethilOfMirkwood/FOSSite/blob/0716e9eba289887a8b05296f971ef628619c0b3a/templates/abt_pages/krish_abt.html#L9-L22). Also changed [image](https://github.com/CalrethilOfMirkwood/FOSSite/blob/0716e9eba289887a8b05296f971ef628619c0b3a/templates/abt_pages/krish_abt.html#L126) on front of about page, created [front page](https://github.com/CalrethilOfMirkwood/FOSSite/blob/master/templates/index.html)|
+
