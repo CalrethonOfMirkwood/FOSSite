@@ -3,17 +3,23 @@
 {% block content %}
 <html lang="en">
 <script>
+    //mask - no mask toggle
+    type  = "mask";
+
     function changeImage() {
+
         console.log ("This click function works")
-        if (document.getElementById("profile_img").src = "/static/Krish_mask.jpg")
+        if (type === "mask")
         {
             document.getElementById("profile_img").src = "/static/Krish_noMask.jpg";
             console.log ("it works kinda");
+            type = "noMask"
         }
-        else
+        else if (type === "noMask")
         {
             document.getElementById("profile_img").src = "/static/Krish_mask.jpg";
             console.log ("bruhhh");
+            type = "mask"
         }
     }
 </script>
@@ -30,11 +36,16 @@
 
 
     <div class ="row" id="content_main"  >
-        <div class="col-auto ml-left mr-auto" id="desc_header" >
+        <div class="col-auto ml-left mr-auto header-bg" id="desc_header" >
             <p >Design Manager @FOSSsite, Scrum Master @Intermission</p>
         </div>
         <div class="col-auto ml-auto mr-right" >
-            <img src="/static/Krish_mask.jpg" id = "profile_img" width="400px" height="400px" onclick="changeImage()">
+            <img src="/static/Krish_mask.jpg" id = "profile_img" width="400px" height="400px" onclick=changeImage();>
+        </div>
+    </div>
+    <div class ="row "   >
+        <div class="col-auto ml-left mr-auto text-dark"  >
+            <p class="text-">Design Manager @FOSSsite, Scrum Master @Intermission</p>
         </div>
     </div>
 
@@ -65,15 +76,16 @@
         font-size: 2em;
         padding-top: 100px;
         width: 40%;
+        padding-left: 20px;
     }
     /* The hero image */
     .hero-image {
         /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/static/Krish_mask.jpg");
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/static/abt_main.png");
 
         /* Set a specific height */
-        height: 1000px;
-
+        height: 750px;
+        width: 100%;
         /* Position and center the image to scale nicely on all screens */
         background-position: center;
         background-repeat: no-repeat;
