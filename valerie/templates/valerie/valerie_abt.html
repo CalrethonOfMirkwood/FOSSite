@@ -10,7 +10,7 @@
         }
     </style>
     <audio id="ourGod">
-        <source src="/static/ourgod.mp3" type="audio/mpeg">
+        <source src="{{url_for('valerie.static', filename='ourgod.mp3')}}" type="audio/mpeg">
     </audio>
     <script>
         const ourgod = document.getElementById("ourGod");
@@ -32,11 +32,11 @@
         function ImageToggle(){
             console.log("jokar")
             if (bruh == "sussy") {
-                document.getElementById("image").src = "/static/jokerval.png";
+                document.getElementById("image").src = "{{url_for('valerie.static', filename='jokerval.png')}}";
                 bruh = "baka"
             }
             else if (bruh == "baka") {
-                document.getElementById("image").src = "/static/valerie_drawing.png";
+                document.getElementById("image").src = "{{url_for('valerie.static', filename='valerie_drawing.png')}}";
                 bruh = "sussy"
             }
         }
@@ -47,11 +47,11 @@
 
 
 
-    <h1>Valerie, aka DistilledVinegar</h1>
+<h1>Valerie, aka DistilledVinegar</h1>
 <p>
     Problematic very often. LXDE enthusiast. Banned from unsupervised computer usage.
 </p>
-<img id="image" onclick=ImageToggle(); src="/static/valerie_drawing.png">
+<img id="image" onclick=ImageToggle(); src="{{url_for('valerie.static', filename='valerie_drawing.png')}}">
 <a href="https://docs.google.com/document/d/1XOe0uETl0PM_4bMLgZH6xaBeHtTIXsf2LWUFkF-1XUw/edit?usp=sharing">My journal.</a>
 <button type="button" onclick="getVerse(); ourGod();">Procure forth the Lord's Word. (via API)</button>
 </body>

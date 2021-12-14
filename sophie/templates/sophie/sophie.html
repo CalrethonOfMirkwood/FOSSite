@@ -20,12 +20,12 @@
         function ImageToggle(){
             if (jailcrow == "sussy") {
                 console.log("sussy")
-                document.getElementById("image").src = "/static/thranduil.png";
+                document.getElementById("image").src = "{{url_for('sophie.static', filename='thranduil.jpg')}}";
                 jailcrow = "baka"
             }
             else if (jailcrow == "baka") {
                 console.log("baka")
-                document.getElementById("image").src = "/static/sophiephoto.jpg";
+                document.getElementById("image").src = "{{url_for('sophie.static', filename='sophiephoto.jpg')}}";
                 jailcrow = "sussy"
             }
         }
@@ -37,7 +37,7 @@
     </audio>
 
     <h1>Sophie, aka CalrethilOfMirkwood</h1>
-    <img id="image" onclick=ImageToggle(); src="/static/sophiephoto.jpg" width="600">
+    <img id="image" onclick=ImageToggle(); src="{{url_for('sophie.static', filename='sophiephoto.jpg')}}" width="600">
     <p>I like FOSS and Tolkien.</p>
     <p>My <a href="https://docs.google.com/document/d/1pevIAx6l1T2paGKv7fC8DbOfuA8IS8x0SDsPHH6GK3E/edit?usp=sharing">AP CSP Tri2 Journal</a> and my <a href="https://github.com/CalrethilOfMirkwood/FOSSite/issues/assigned/CalrethilOfMirkwood">GitHub issues</a></p>
 

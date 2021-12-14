@@ -9,14 +9,14 @@ This HTML is setup as a fragment allowing it to be "included" by other HTML file
     </button>
     <!-- Bootstrap menus -->
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto"?>
+        <ul class="navbar-nav mr-auto">
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarModel" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About Us</a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href={{ url_for('krish_abt') }}>Krish</a>
-                    <a class="dropdown-item" href={{ url_for('sophie') }}>Sophie</a>
-                    <a class="dropdown-item" href="/abt_pages/michael">Michael</a>
-                    <a class="dropdown-item" href="/abt_pages/valerie">Valerie</a>
+                    <a class="dropdown-item" href={{ url_for('krish.krish') }}>Krish</a>
+                    <a class="dropdown-item" href={{ url_for('sophie.sophie') }}>Sophie</a>
+                    <a class="dropdown-item" href={{ url_for('michael.michael') }}>Michael</a>
+                    <a class="dropdown-item" href={{ url_for('valerie.valerie') }}>Valerie</a>
                 </div>
             </li>
         </ul>

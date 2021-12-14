@@ -16,8 +16,8 @@ def getSilmMeme():
     return (title, url)
 
 def noldolante():
-    songs = ('/static/sophiemusic/badapple.mp3',
-             '/static/sophiemusic/beastars.mp3',
+    songs = ("{{url_for('sophie.static', filename='badapple.mp3')}}",
+             "{{url_for('sophie.static', filename='beastars.mp3')}}",
              '/static/sophiemusic/BLOODYSTREAM.mp3',
              '/static/sophiemusic/connect.mp3',
              '/static/sophiemusic/dadadadatenshi.mp3',
