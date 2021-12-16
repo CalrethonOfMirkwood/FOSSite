@@ -13,14 +13,14 @@
         }
     </style>
     <script>
-        console.log("currently playing:"+"{{ noldolante }}".slice(20))
+        console.log("currently playing: "+"{{ noldolante }}".slice(19))
 
         var jailcrow = "sussy";
 
         function ImageToggle(){
             if (jailcrow == "sussy") {
                 console.log("sussy")
-                document.getElementById("image").src = "{{url_for('sophie.static', filename='thranduil.jpg')}}";
+                document.getElementById("image").src = "{{url_for('sophie.static', filename='thranduil.png')}}";
                 jailcrow = "baka"
             }
             else if (jailcrow == "baka") {
@@ -32,7 +32,7 @@
     </script>
 </head>
 <body>
-    <audio autoplay>
+    <audio autoplay loop>
         <source src="{{ noldolante }}">
     </audio>
 
