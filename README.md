@@ -33,3 +33,12 @@ Week Summary: Added fully functional about me pages, created navbar to extend ac
 | Valreie | Started working on [create task](https://github.com/CalrethilOfMirkwood/FOSSite/issues/13) in pairs with Sophie.  And put [Bible verse API](https://github.com/CalrethilOfMirkwood/FOSSite/blob/master/templates/abt_pages/val_about_me.html#L18-L31) on finalized about page. |
 | Michael | Started [deployment](https://github.com/CalrethilOfMirkwood/FOSSite/wiki/Deployment) on a personal computer and finalized [about page](https://github.com/CalrethilOfMirkwood/FOSSite/blob/master/templates/abt_pages/michaelAbout.html). |
 | Krish | Created basic [layout assigned colors](https://github.com/CalrethilOfMirkwood/FOSSite/blob/0716e9eba289887a8b05296f971ef628619c0b3a/templates/layouts/layout.html#L26-L33) based on website theme, Created navbar with [dropdown for webpage](https://github.com/CalrethilOfMirkwood/FOSSite/blob/0716e9eba289887a8b05296f971ef628619c0b3a/templates/layouts/navbar.html#L20-L25), Added old web API to about page and mask [image toggle](https://github.com/CalrethilOfMirkwood/FOSSite/blob/0716e9eba289887a8b05296f971ef628619c0b3a/templates/abt_pages/krish_abt.html#L9-L22). Also changed [image](https://github.com/CalrethilOfMirkwood/FOSSite/blob/0716e9eba289887a8b05296f971ef628619c0b3a/templates/abt_pages/krish_abt.html#L126) on front of about page, created [front page](https://github.com/CalrethilOfMirkwood/FOSSite/blob/master/templates/index.html)|
+
+# Week 3
+Week Summary: The website now has a semi-functional terminal emulator and does not work.
+| Name | Task |
+| - | :--- |
+| Sophie | Created [terminal emulator](https://github.com/CalrethilOfMirkwood/FOSSite/blob/master/templates/terminal.html) and helped Krish with the reorganizing. |
+| Valreie | Worked on the [terminal emulator](https://github.com/CalrethilOfMirkwood/FOSSite/blob/master/templates/terminal.html) with Sophie. |
+| Michael | Worked on [deployment](https://github.com/CalrethilOfMirkwood/FOSSite/wiki/Deployment). |
+| Krish | Created [site-wide layout](https://github.com/CalrethilOfMirkwood/FOSSite/blob/master/templates/layouts/layout.html) and completely reorganized website [file layout](https://github.com/CalrethilOfMirkwood/FOSSite/commit/c02599d588552ced02636a6a00bc4d9daa5d9a3d).|
