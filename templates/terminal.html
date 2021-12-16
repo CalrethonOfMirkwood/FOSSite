@@ -1,13 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-{% extends "layouts/layout.html" %}
+{% include "layouts/layout.html" %}
 {% block meta%}
 <head>
     <meta charset="UTF-8">
     <title>Terminal Emulator</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
+    <link rel='stylesheet' href='/terminal/normalize.css'>
+    <link rel='stylesheet' href='/terminal/master.css'>
 </head>
 {% endblock %}
 <body>
-<!-- terminal? -->
+<div id='output-wrapper'></div>
+
+<div class='input-wrapper'>
+    <span>$&nbsp;</span><input id='input' type='text' autofocus/>
+</div>
+
+<script src='/terminal/terminal.js'></script>
+<script src='/terminal/master.js'></script>
 </body>
 </html>
