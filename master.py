@@ -19,6 +19,10 @@ app.register_blueprint(app_valerie)
 def index():
     return render_template("index.html")
 
+@app.route('/terminal')
+def terminal():
+    return render_template("terminal.html")
+
 #
 @app.errorhandler(500)
 def server_error(e):
@@ -29,7 +33,5 @@ def server_error(e):
     return render_template('404.html'), 404
 
 # runs the application on the development server
-if __name__ == "__main__":
+if __name__ == "__master__":
     app.run()
-
-
