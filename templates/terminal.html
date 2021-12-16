@@ -14,8 +14,21 @@
 <div id='output-wrapper'></div>
 
 <div class='input-wrapper'>
-    <span>$&nbsp;</span><input id='input' type='text' autofocus/>
+    <span>$&nbsp;</span><input id='terminput' type='text' autofocus/>
 </div>
+<button id="Enter">Enter</button>
+<script>
+    $("#pass").keyup(function(event) {
+        if (event.keyCode === 13) {
+            $("#Enter").click();
+        }
+    });
+
+    $("#Enter").click(function() {
+        var amongus = document.getElementById("terminput").value;
+        alert(amongus); //i suffer from depression
+    });
+</script>
 
 <script src='/terminal/terminal.js'></script>
 <script src='/terminal/master.js'></script>
