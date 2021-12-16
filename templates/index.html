@@ -15,10 +15,44 @@
     <div class="hero-image">
         <div class="hero-text">
             <h1 style="font-size:6em;"><strong>Welcome To FOSSite</strong></h1>
-            <p id="quote">"Either the users control the program or the program controls the users"</p>
-            <a class="j_btn">Read More</a>
+            <p class="text-primary" id="quote">"Either the users control the program or the program controls the users"</p>
+            <a type="button" href="https://github.com/CalrethilOfMirkwood/FOSSite/wiki#why-did-we-create-fossite" class="btn btn-button btn-lg px-3 me-md-10 text-light">Read More</a>
         </div>
     </div>
+    <div class="container col-xxl-8 px-4 py-8 ">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+            <div class="col-10 col-sm-8 col-lg-6">
+                <img src={{url_for('static', filename='linux-logo.jpg')}} class="d-block mx-lg-auto img-fluid" alt="Linux Image" width="700" height="500" loading="lazy">
+            </div>
+            <div class="col-lg-6">
+                <h1 class="display-3 fw-bold lh-1 mb-3 text-dark">What Is FOSSite?</h1>
+                <p class="lead">FOSSite was created with the hope of exposing the public to the idea of free and open source software. FOSS itself stands for the ideals of software that is accessible to the public and software that allows users to have full control of their software.</p>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                    <a type="button" href="https://github.com/CalrethilOfMirkwood/FOSSite/wiki#why-did-we-create-fossite" class="btn btn-primary btn-lg px-4 me-md-2">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <h2 class="pb-2 border-bottom">FOSS Software and Services</h2>
+        <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+            <div class="feature col">
+                <h2>Linux</h2>
+                <p>Linux is the best-known and most-used open source operating system. </p>
+                <a type="button" href="{{ url_for('krish.linux_intro') }}" class="btn btn-primary btn-lg px-4 me-md-2" style="position:relative; top:20px;">Learn More</a>
+            </div>
+            <div class="feature col">
+                <h2>Terminal Emulator</h2>
+                <p>A mock shell terminal to practice your skills with linux and other UNIX based software.</p>
+                <a type="button" href="{{ url_for('terminal') }}" class="btn btn-primary btn-lg px-4 me-md-2">Learn More</a>
+            </div>
+            <div class="feature col">
+                <h2>FOSS</h2>
+                <p>Learn about how to use FOSS in your life more often, and the benefits of using it</p>
+                <a type="button"  class="btn btn-primary btn-lg px-4 me-md-2">Learn More</a>
+            </div>
+        </div>
+    </div>
+
+
     <style>
         body, html {
         height: 100%;
@@ -49,32 +83,10 @@
         color: white;
         }
         #quote{
-            color: var(--primary);
             font-size: 2em;
         }
-        .j_btn{
-            background-color:  var(--button); /* Purple */
-            border: none;
-            color: black;
-            padding: 10px 22px;
-            font-size: 14px;
-            border-radius: 12px;
-            position:relative;
-            justify-content: right;
-            height:50px;
-            margin-top:12%;
 
-        }
 
-        .j_btn:hover {
-            background-color: var(--btn_hov); /* Light Purple */
-            border: none;
-            color: white;
-            padding: 10px 32px;
-            font-size: 18px;
-            border-radius: 12px;
-            position: relative;
-        }
     </style>
 </body>
 {% endblock %}

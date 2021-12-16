@@ -38,9 +38,9 @@
     <div class ="row" id="content_main"  >
         <div class="col-auto ml-left mr-auto header-bg" id="desc_header" >
             <p >Design Manager @FOSSsite, Scrum Master @Intermission. Science is pretty cool.</p>
-            <a class="j_btn" href="https://docs.google.com/document/d/1Yd2N04Y8EEOolwOF8eyXlXfu_NiOpqE99vexkLGeswg/edit?usp=sharing">Journal</a>
-            <a class="j_btn" href="https://github.com/CalrethilOfMirkwood/FOSSite/wiki/Create-Tasks#krishs-create-task">Create Task</a>
-            <a class="j_btn" href="https://github.com/CalrethilOfMirkwood/FOSSite/issues/assigned/KrishnadevL">Github Issues</a>
+            <a type="button" class="btn btn-button btn-lg px-2 me-md-2" href="https://docs.google.com/document/d/1Yd2N04Y8EEOolwOF8eyXlXfu_NiOpqE99vexkLGeswg/edit?usp=sharing">Journal</a>
+            <a type="button" class="btn btn-button btn-lg px-2 me-md-2" href="https://github.com/CalrethilOfMirkwood/FOSSite/wiki/Create-Tasks#krishs-create-task">Create Task</a>
+            <a type="button" class="btn btn-button btn-lg px-2 me-md-2" href="https://github.com/CalrethilOfMirkwood/FOSSite/issues/assigned/KrishnadevL">Github Issues</a>
         </div>
         <div class="col-auto ml-auto mr-right" >
             <img src="{{url_for('krish.static', filename='Krish_mask.jpg')}}" id = "profile_img" width="500px" height="500px" onclick=changeImage();>
@@ -48,10 +48,6 @@
         </div>
 
     </div>
-    <div class ="row"   >
-        <div class="col-auto ml-left mr-auto text-dark"  >
-
-        </div>
 
     </div>
     <div class ="row">
@@ -86,29 +82,8 @@
     p{
         color: whitesmoke;
     }
-    .j_btn{
-        background-color:  var(--button); /* Blue */
-        border: none;
-        color: black;
-        padding: 10px 22px;
-        font-size: 14px;
-        border-radius: 12px;
-        position:relative;
-        justify-content: right;
-        height:50px;
-        margin-top:12%;
 
-    }
 
-    .j_btn:hover {
-        background-color: var(--btn_hov); /* Light blue */
-        border: none;
-        color: white;
-        padding: 10px 32px;
-        font-size: 18px;
-        border-radius: 12px;
-        position:relative;
-    }
     /* Pads image, centers it in  background*/
     #profile_img {
         padding: 10%;

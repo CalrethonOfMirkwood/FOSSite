@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% include "layouts/layout.html" %}
+    <meta charset="UTF-8">
+    <title>Linux Intro</title>
+</head>
+<body>
+<div class=" p-3 bg-white" style="width: 100%; ">
+    <a href="{{ url_for('krish.linux_intro') }}" class="d-flex align-items-center pb-3 mb-3 link-dark text-decoration-none border-bottom">
+        <svg class="bi" width="0" height="24"><use xlink:href="#bootstrap"></use></svg>
+        <span class="fs-5 fw-semibold">Welcome To Linux</span>
+    </a>
+    <ul class="list-unstyled ps-0">
+        <li class="mb-1">
+            <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="true">
+                What Is Linux?
+            </button>
+            <div class="collapse show" id="home-collapse">
+                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small" >
+                    <li><a href="krish/templates/krish/linux_history.html" class="link-dark rounded">History</a></li>
+                    <li><a href="#" class="link-dark rounded">Linux Today</a></li>
+                    <li><a href="#" class="link-dark rounded">Why Learn Linux?</a></li>
+                </ul>
+            </div>
+        </li>
+        <li class="mb-1">
+            <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false">
+                Getting Started
+            </button>
+            <div class="collapse" id="dashboard-collapse" style="">
+                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                    <li><a href="#" class="link-dark rounded">WIP Lesson</a></li>
+                    <li><a href="#" class="link-dark rounded">WIP Lesson</a></li>
+                    <li><a href="#" class="link-dark rounded">WIP Lesson</a></li>
+                    <li><a href="#" class="link-dark rounded">WIP Lesson</a></li>
+                </ul>
+            </div>
+        </li>
+        <li class="mb-1">
+            <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="false">
+                The Linux Terminal
+            </button>
+            <div class="collapse" id="orders-collapse">
+                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                    <li><a href="#" class="link-dark rounded">WIP Lesson</a></li>
+                    <li><a href="#" class="link-dark rounded">WIP Lesson</a></li>
+                    <li><a href="#" class="link-dark rounded">WIP Lesson</a></li>
+                    <li><a href="#" class="link-dark rounded">WIP Lesson</a></li>
+                </ul>
+            </div>
+        </li>
+    </ul>
+</div>
+<div class="px-4 py-5 my-5 text-center">
+    <h1 class="display-5 fw-bold bg-header-bg text-light" style="font-size:5em;"><strong>History Of Linux</strong></h1>
+    <img class="d-block mx-auto mb-4" src="{{ url_for('krish.static', filename='History_linux.png') }}" alt="" width="500px;" height="250px">
+    <div class="col-lg-6 mx-auto">
+        <p class="lead mb-4">In 1991, while studying computer science at University of Helsinki, Linus Torvalds began a project that later became the Linux kernel. He wrote the program specifically for the hardware he was using and independent of an operating system because he wanted to use the functions of his new PC with an 80386 processor. Development was done on MINIX using the GNU C Compiler.</p>
+        <a href="https://en.wikipedia.org/wiki/Linus_Torvalds" class="text-subtext">Learn a Bit More about Linus Torvalds</a>
+    </div>
+</div>
+</body>
+<style>
+    body{
+        height:100%;
+    }
+</style>
+</html>

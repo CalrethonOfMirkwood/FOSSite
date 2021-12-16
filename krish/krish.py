@@ -33,3 +33,10 @@ def krish():
 
     return render_template("krish_abt.html", movie_choice=movie_list)
 
+@app_krish.route('/linux_intro')
+def linux_intro():
+    return render_template("linux_intro.html")
+
+@app_krish.route('/linux_history')
+def linux_history():
+    return render_template("linux_history.html")
