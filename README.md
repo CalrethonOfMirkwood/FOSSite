@@ -35,7 +35,9 @@ Week Summary: Added fully functional about me pages, created navbar to extend ac
 | Krish | Created basic [layout assigned colors](https://github.com/CalrethilOfMirkwood/FOSSite/blob/0716e9eba289887a8b05296f971ef628619c0b3a/templates/layouts/layout.html#L26-L33) based on website theme, Created navbar with [dropdown for webpage](https://github.com/CalrethilOfMirkwood/FOSSite/blob/0716e9eba289887a8b05296f971ef628619c0b3a/templates/layouts/navbar.html#L20-L25), Added old web API to about page and mask [image toggle](https://github.com/CalrethilOfMirkwood/FOSSite/blob/0716e9eba289887a8b05296f971ef628619c0b3a/templates/abt_pages/krish_abt.html#L9-L22). Also changed [image](https://github.com/CalrethilOfMirkwood/FOSSite/blob/0716e9eba289887a8b05296f971ef628619c0b3a/templates/abt_pages/krish_abt.html#L126) on front of about page, created [front page](https://github.com/CalrethilOfMirkwood/FOSSite/blob/master/templates/index.html)|
 
 # Week 3
-Week Summary: The website now has a semi-functional terminal emulator and does not work.
+Week Summary: The website now has a semi-functional terminal emulator and a sample lesson page.  There file system has been completely reorganized.
+
+Week Review Video: https://drive.google.com/file/d/13PMKKLhJQSZeFc7bavTpaQyBmh2xBkOD/view
 | Name | Task |
 | - | :--- |
 | Sophie | Created [terminal emulator](https://github.com/CalrethilOfMirkwood/FOSSite/blob/master/templates/terminal.html) and helped Krish with the reorganizing. |
