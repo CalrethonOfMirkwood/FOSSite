@@ -4,7 +4,7 @@ from sqlalchemy.exc import IntegrityError
 from flask_migrate import Migrate
 from flask_restful import Resource, Api
 
-from __init__ import app
+from app import app
 
 # Tutorial: https://www.sqlalchemy.org/library.html#tutorials, try to get into Python shell and follow along
 

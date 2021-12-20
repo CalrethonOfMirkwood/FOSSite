@@ -1,6 +1,6 @@
 # import "packages" from flask
 from flask import Flask, render_template
-from __init__ import app
+from app import app
 
 #Pulls data for blueprints
 from sophie.sophie import app_sophie
