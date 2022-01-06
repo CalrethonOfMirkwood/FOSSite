@@ -1,4 +1,4 @@
-{% include layout.html %}
+{% include navigation.html %}
 
 # Table of Contents
 - [The People](#the-people)
