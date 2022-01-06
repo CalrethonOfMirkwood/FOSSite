@@ -9,17 +9,9 @@ comments: true
 
 
 # Table of Contents
-- [The People](#the-people)
 - [Week 1](#week-1)
 - [Week 2](#week-2)
 
-## The People
-| Name | Role | Github Profile | Journal | Issues | Scrum Board | Commit History |
-| - | - | - | - | - | - | - |
-| Sophie Soyeon Park | Scrum Master | [@CalrethilOfMirkwood](https://github.com/CalrethilOfMirkwood) | [Journal](https://docs.google.com/document/d/1pevIAx6l1T2paGKv7fC8DbOfuA8IS8x0SDsPHH6GK3E/edit?usp=sharing) | [Issues](https://github.com/CalrethilOfMirkwood/FOSSite/issues?q=assignee%3ACalrethilOfMirkwood) | [Scrum Board](https://github.com/CalrethilOfMirkwood/FOSSite/projects/1?card_filter_query=assignee%3ACalrethilOfMirkwood) | [Commits](https://github.com/CalrethilOfMirkwood/FOSSite/commits?author=CalrethilOfMirkwood) |
-| Krishnadev Lakshminarayanan | Web Designer | [@KrishnadevL](https://github.com/KrishnadevL) | [Journal](https://docs.google.com/document/d/1Yd2N04Y8EEOolwOF8eyXlXfu_NiOpqE99vexkLGeswg/edit?usp=sharing) | [Issues](https://github.com/CalrethilOfMirkwood/FOSSite/issues?q=assignee%3AKrishnadevL) | [Scrum Board](https://github.com/CalrethilOfMirkwood/FOSSite/projects/1?card_filter_query=assignee%3AKrishnadevL) | [Commits](https://github.com/CalrethilOfMirkwood/FOSSite/commits?author=KrishnadevL) |
-| Valerie Wilson | GitHub Admin | [@DistilledVinegar](https://github.com/DistilledVinegar) | [Journal](https://docs.google.com/document/d/1XOe0uETl0PM_4bMLgZH6xaBeHtTIXsf2LWUFkF-1XUw/edit) | [Issues](https://github.com/CalrethilOfMirkwood/FOSSite/issues?q=assignee%3ADistilledVinegar) | [Scrum Board](https://github.com/CalrethilOfMirkwood/FOSSite/projects/1?card_filter_query=assignee%3ADistilledVinegar) | [Commits](https://github.com/CalrethilOfMirkwood/FOSSite//commits?author=DistilledVinegar) |https://github.com/CalrethilOfMirkwood/FOSSite/
-| Michael Sanborn | Deployment Manager | [@michaelScopic](https://github.com/michaelScopic) | Journal | [Issues](https://github.com/CalrethilOfMirkwood/FOSSite/issues?q=assignee%3AmichaelScopic) | [Scrum Board](https://github.com/CalrethilOfMirkwood/FOSSite/projects/1?card_filter_query=assignee%3AmichaelScopic) | [Commits](https://github.com/CalrethilOfMirkwood/FOSSite/commits?author=michaelScopic) |
 
 # Week 1
 Most of week 1 was spent on ideation and planning the course.
