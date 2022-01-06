@@ -18,6 +18,7 @@ FOSSite was created with the hope of exposing the general public to the idea of 
 
 # Week 1
 Most of week 1 was spent on ideation and planning the course.
+
 | Name | Task |
 | - | :--- |
 | Sophie | Sophie worked with Valerie to create a rough outline of the [course syllabus](https://docs.google.com/document/d/1Z1GYSwubeXHscKTN5EzRGT2B-IAYzG0vddGxIzL9HNA/edit?skip_itp2_check=true).  She also made her [about page](https://github.com/CalrethilOfMirkwood/FOSSite/issues/2) with a [reddit API](https://github.com/CalrethilOfMirkwood/FOSSite/tree/master/silmarillionmemes.py) (the [error 500 page](https://github.com/CalrethilOfMirkwood/FOSSite/blob/master/templates/500.html) links to an alternative page without the API for school wifi). |
@@ -27,6 +28,7 @@ Most of week 1 was spent on ideation and planning the course.
 
 # Week 2
 Week Summary: Added fully functional about me pages, created navbar to extend across all pages, created base color pallete for website in layout.html, created front landing page 
+
 | Name | Task |
 | - | :--- |
 | Sophie | Created [image toggle function](https://github.com/CalrethilOfMirkwood/FOSSite/blob/master/templates/abt_pages/sophie.html#L18-L31), put it on other team members' pages, and finalized [about page](https://github.com/CalrethilOfMirkwood/FOSSite/blob/master/templates/abt_pages/sophie.html). |
@@ -38,6 +40,7 @@ Week Summary: Added fully functional about me pages, created navbar to extend ac
 Week Summary: The website now has a semi-functional terminal emulator and a sample lesson page.  There file system has been completely reorganized.
 
 Week Review Video: https://drive.google.com/file/d/13PMKKLhJQSZeFc7bavTpaQyBmh2xBkOD/view
+
 | Name | Task |
 | - | :--- |
 | Sophie | Created [terminal emulator](https://github.com/CalrethilOfMirkwood/FOSSite/blob/master/templates/terminal.html) and helped Krish with the reorganizing. |
