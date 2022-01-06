@@ -56,5 +56,7 @@ Week Review Video: https://drive.google.com/file/d/13PMKKLhJQSZeFc7bavTpaQyBmh2x
 WORK IN PROGRESS - DEVELOPMENT
 
 {% if page.comments %}
-    {% include comments.js %}
+
+{% include comments.js %}
+    
 {% endif %}
