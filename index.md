@@ -1,3 +1,5 @@
+{% include layout.html %}
+
 # Table of Contents
 - [The People](#the-people)
 - [Week 1](#week-1)
