@@ -1,4 +1,4 @@
-
+---
 ## The Team
 {% for team_member in site.team_members %}
 - {{ team_member.name }}
