@@ -1,3 +1,4 @@
+{% include navigation.html %}
 
 ## The People
 | Name | Role | Github Profile | Journal | Issues | Scrum Board | Commit History | About Pages |
