@@ -1,10 +1,12 @@
-{% include navigation.html %}
-
 ---
 layout: default
 title: ReadME
 comments: true
 ---
+
+{% include navigation.html %}
+
+
 
 # Table of Contents
 - [The People](#the-people)
