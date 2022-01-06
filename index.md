@@ -45,6 +45,8 @@ Week Review Video: https://drive.google.com/file/d/13PMKKLhJQSZeFc7bavTpaQyBmh2x
 | Michael | Worked on [deployment](https://github.com/CalrethilOfMirkwood/FOSSite/wiki/Deployment). |
 | Krish | Created [site-wide layout](https://github.com/CalrethilOfMirkwood/FOSSite/blob/master/templates/layouts/layout.html) and completely reorganized website [file layout](https://github.com/CalrethilOfMirkwood/FOSSite/commit/c02599d588552ced02636a6a00bc4d9daa5d9a3d).|
 
+{% include footer.md %}
+
 WORK IN PROGRESS - DEVELOPMENT
 
 {% if page.comments %}
