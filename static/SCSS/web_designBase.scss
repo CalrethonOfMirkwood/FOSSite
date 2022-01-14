@@ -61,10 +61,9 @@ $theme-colors: (
 
 // setup default background
 html, body {
-  background-image: var(--bs-gradient);
-  background-color: var(--bs-body-bg);
+
   width:100%;
-  font-family: 'Consolas', 'Monaco', 'Bitstream Vera Sans Mono', monospace;
+  font-family: 'Liberation Mono', monospace;
 }
 
 
@@ -72,13 +71,7 @@ html, body {
 .dark-mode {
   $enable-gradients: true;
 
-  /* redefine body background */
-  html, body {
-    background-image: var(--bs-gradient);
-    background-color: #2c3034;
-    width:100%;
-    font-family: 'Consolas', 'Monaco', 'Bitstream Vera Sans Mono', monospace;
-  }
+
 
   /* redefine theme colors */
   $primary: #3165a6;
@@ -86,7 +79,7 @@ html, body {
   $subtext: #cbcbcb;
   $button: #ff9200 ;
   $btn_hov: #ffbb5b;
-
+  $body-bg: #414144;
 
   $theme-colors: (
           "primary": $primary,
@@ -94,6 +87,12 @@ html, body {
           "button": $button,
           "subtext": $subtext
   );
+
+
+
+  /* set background values */
+  --#{$variable-prefix}body-bg: #{$body-bg};
+
   /* redefine theme color variables */
   @each $color, $value in $theme-colors {
     --#{$variable-prefix}#{$color}: #{$value};
