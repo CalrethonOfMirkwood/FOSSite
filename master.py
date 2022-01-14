@@ -23,6 +23,10 @@ def index():
 def terminal():
     return render_template("terminal.html")
 
+@app.route('/distrodatabase')
+def distrodatabase():
+    return render_template("database.html")
+
 #
 @app.errorhandler(500)
 def server_error(e):
