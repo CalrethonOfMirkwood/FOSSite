@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<!-- EXTEND (layout.html), this is a template for all rendered pages in the project -->
+<head>
+    {% include "layouts/layout.html" %}
+    <meta charset="UTF-8">
+    <title>Database</title>
+</head>
+<body>
+    <h2><a href="{{ url_for('database.list') }}">See database</a></h2>
+    <h2><a href="{{ url_for('database.enternew') }}">Add new entry to database</a></h2>
+</body>

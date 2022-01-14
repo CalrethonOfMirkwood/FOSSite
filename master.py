@@ -7,12 +7,14 @@ from sophie.sophie import app_sophie
 from krish.krish import app_krish
 from michael.michael import app_michael
 from valerie.valerie import app_valerie
+from database.database import app_database
 
 # register blueprints
 app.register_blueprint(app_sophie)
 app.register_blueprint(app_krish)
 app.register_blueprint(app_michael)
 app.register_blueprint(app_valerie)
+app.register_blueprint(app_database)
 
 # connects default URL to render index.html
 @app.route('/')
@@ -23,11 +25,6 @@ def index():
 def terminal():
     return render_template("terminal.html")
 
-@app.route('/distrodatabase')
-def distrodatabase():
-    return render_template("database.html")
-
-#
 @app.errorhandler(500)
 def server_error(e):
     return render_template('500.html'), 500
