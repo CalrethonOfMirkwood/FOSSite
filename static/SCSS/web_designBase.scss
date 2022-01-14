@@ -67,33 +67,42 @@ html, body {
   font-family: 'Consolas', 'Monaco', 'Bitstream Vera Sans Mono', monospace;
 }
 
-//
-//// setup dark mode styling
-//.dark-mode {
-//  $enable-gradients: true;
-//
-//  /* redefine body background */
-//  $body-bg: #455a64;
-//  /* set background values */
-//  --#{$variable-prefix}body-bg: #{$body-bg};
-//
-//  /* redefine theme colors */
-//  $primary: $purple;
-//  $secondary: $green-600;
-//
-//  $theme-colors: (
-//          "primary": $primary,
-//          "secondary": $secondary
-//  );
-//  /* redefine theme color variables */
-//  @each $color, $value in $theme-colors {
-//    --#{$variable-prefix}#{$color}: #{$value};
-//  }
-//  /* redefine theme theme-colors-rgb variables */
-//  $theme-colors-rgb: map-loop($theme-colors, to-rgb, "$value");
-//  @each $color, $value in $theme-colors-rgb {
-//    --#{$variable-prefix}#{$color}-rgb: #{$value};
-//  }
-//
-//  @import "../../node_modules/bootstrap/scss/bootstrap";
-//}
+
+// setup dark mode styling
+.dark-mode {
+  $enable-gradients: true;
+
+  /* redefine body background */
+  html, body {
+    background-image: var(--bs-gradient);
+    background-color: #2c3034;
+    width:100%;
+    font-family: 'Consolas', 'Monaco', 'Bitstream Vera Sans Mono', monospace;
+  }
+
+  /* redefine theme colors */
+  $primary: #3165a6;
+  $header-bg: #a367ff;
+  $subtext: #cbcbcb;
+  $button: #ff9200 ;
+  $btn_hov: #ffbb5b;
+
+
+  $theme-colors: (
+          "primary": $primary,
+          "header-bg": $header-bg,
+          "button": $button,
+          "subtext": $subtext
+  );
+  /* redefine theme color variables */
+  @each $color, $value in $theme-colors {
+    --#{$variable-prefix}#{$color}: #{$value};
+  }
+  /* redefine theme theme-colors-rgb variables */
+  $theme-colors-rgb: map-loop($theme-colors, to-rgb, "$value");
+  @each $color, $value in $theme-colors-rgb {
+    --#{$variable-prefix}#{$color}-rgb: #{$value};
+  }
+
+  @import "../../node_modules/bootstrap/scss/bootstrap";
+}

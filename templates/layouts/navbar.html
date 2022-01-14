@@ -4,7 +4,8 @@
             <a class="navbar-brand" href="/">FOSSsite</a>
             <a class="nav-link text-light" href="{{ url_for('terminal') }}">Terminal Emulator</a>
             <a class="nav-link text-light" href="{{ url_for('krish.linux_intro') }}">Linux</a>
-            <a class="nav-link text-light" href="{{ url_for('database') }}">Databases</a>
+
+
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavLightDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -26,17 +27,14 @@
                     </li>
                 </ul>
             </div>
+            <div>
+                <input type="button" class="btn-button" onclick="darkFunction()" value="Dark Mode" id="darkSwitch">
+            </div>
         </div>
     </div>
-    <style>
-        #navbarSupportedContent {
-            max-width:45%;
-        }
 
-        #signin {
-            position:absolute;
-            left: 90%
-
-        }
-    </style>
+    {% block navbar_script %}
+    <!-- Navigation bar JavaScript support -->
+    <script src={{  url_for("static", filename="navbar.js", version='140') }}></script>
+    {% endblock %}
 </nav>
