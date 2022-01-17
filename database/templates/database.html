@@ -6,12 +6,13 @@
     <title>New Record</title>
 </head>
 <body>
-<h3>This is an anonymous posting board where people can post anything related to Linux and other FOSS.  Non-FOSS posts will be removed unless they are sufficiently funny, as deemed by the devs.</h3>
+<h3>This is an anonymous imageboard where people can post anything related to Linux and other FOSS.  Non-FOSS posts will be removed unless they are sufficiently funny, as deemed by the devs.</h3>
 <h2><a href="{{ url_for('database.enternew') }}">Add new post</a></h2>
 <table border = 1>
     <thead>
     <td>User</td>
     <td>Title</td>
+    <td>Image</td>
     <td>Post</td>
     </thead>
 
@@ -19,6 +20,7 @@
         <tr>
             <td>{{row["name"]}}</td>
             <td>{{row["title"]}}</td>
+            <td><img src="{{row["img"]}}" width="20%"></td>
             <td>{{row["post"]}}</td>
         </tr>
     {% endfor %}
