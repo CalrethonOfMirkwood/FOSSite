@@ -3,22 +3,20 @@
 <head>
     {% include "/layouts/layout.html" %}
     <meta charset="UTF-8">
-    <title></title>
+    <title>New Record</title>
 </head>
 <body>
-    <form action = "{{ url_for('post') }}" method = "POST">
+    <form action = "{{ url_for('database.addpost') }}" method = "POST">
         <h3>Add New Post</h3>
         Username<br>
-        <input type = "text" name = "nm" /></br>
+        <input type = "text" name = "name" /></br>
 
-        Password<br>
-        <textarea name = "add" ></textarea><br>
+        Title<br>
+        <input type = "text" name = "title" /><br>
 
-        City<br>
-        <input type = "text" name = "city" /><br>
+        Post Content<br>
+        <input type = "text" name = "post" /><br>
 
-        PINCODE<br>
-        <input type = "text" name = "pin" /><br>
         <input type = "submit" value = "submit" /><br>
     </form>
 </body>

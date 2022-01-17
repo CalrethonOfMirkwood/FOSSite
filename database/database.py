@@ -8,14 +8,25 @@ app_database = Blueprint('database', __name__,
 
 @app_database.route('/')
 def database():
-    return render_template('database.html')
+    con = sql.connect("database.db")
+    con.row_factory = sql.Row
+
+    cur = con.cursor()
+    command ="""CREATE TABLE IF NOT EXISTS
+    database(name TEXT, title TEXT, post TEXT)"""
+
+    cur.execute(command)
+    cur.execute("select * from database")
+
+    rows = cur.fetchall();
+    return render_template("database.html",rows = rows)
 
 @app_database.route('/enternew')
 def enternew():
     return render_template('enternew.html')
 
 @app_database.route('/post',methods = ['POST', 'GET'])
-def addrec():
+def addpost():
     if request.method == 'POST':
         try:
             name = request.form['name']
@@ -25,51 +36,12 @@ def addrec():
             with sql.connect("database.db") as con:
                 cur = con.cursor()
 
-                cur.execute("INSERT INTO forum (name,addr,city,pin) VALUES (?,?,?,?)",(name,title,post) )
-
+                cur.execute("INSERT INTO database (name,title,post) VALUES (?,?,?)",(name,title,post) )
                 con.commit()
-                msg = "Record successfully added"
         except:
             con.rollback()
             msg = "error in insert operation"
 
         finally:
-            return render_template("result.html",msg = msg)
+            return render_template("result.html")
             con.close()
-
-@app_database.route('/list')
-def list():
-    con = sql.connect("database.db")
-    con.row_factory = sql.Row
-
-    cur = con.cursor()
-    cur.execute("select * from forum")
-
-    rows = cur.fetchall();
-    return render_template("list.html",rows = rows)
-
-
-# simple listing of table
-def print_tester():
-    print("------------")
-    print("Table: users with SQLAlchemy")
-    print("------------")
-    result = model_read_all()
-    for row in result:
-        print(row)
-
-def print_tester2():
-    print("------------")
-    print("Table: users with SQL query")
-    print("------------")
-    result = db.session.execute('select * from users')
-    print(result.keys())
-    for row in result:
-        print(row)
-
-if __name__ == "__database__":
-    print_tester()
-    print_tester2()
-
-
-

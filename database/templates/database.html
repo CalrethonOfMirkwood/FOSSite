@@ -1,11 +1,27 @@
 <!DOCTYPE html>
-<!-- EXTEND (layout.html), this is a template for all rendered pages in the project -->
+<html lang="en">
 <head>
-    {% include "layouts/layout.html" %}
+    {% include "/layouts/layout.html" %}
     <meta charset="UTF-8">
-    <title>Database</title>
+    <title>New Record</title>
 </head>
 <body>
-    <h2><a href="{{ url_for('database.list') }}">See database</a></h2>
-    <h2><a href="{{ url_for('database.enternew') }}">Add new entry to database</a></h2>
+<h3>This is an anonymous posting board where people can post anything related to Linux and other FOSS.  Non-FOSS posts will be removed unless they are sufficiently funny, as deemed by the devs.</h3>
+<h2><a href="{{ url_for('database.enternew') }}">Add new post</a></h2>
+<table border = 1>
+    <thead>
+    <td>User</td>
+    <td>Title</td>
+    <td>Post</td>
+    </thead>
+
+    {% for row in rows %}
+        <tr>
+            <td>{{row["name"]}}</td>
+            <td>{{row["title"]}}</td>
+            <td>{{row["post"]}}</td>
+        </tr>
+    {% endfor %}
+</table>
 </body>
+</html>
