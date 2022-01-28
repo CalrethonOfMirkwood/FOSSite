@@ -7,20 +7,41 @@
 </head>
 <body>
     <form action = "{{ url_for('database.addpost') }}" method = "POST">
-        <h3>Add New Post</h3>
-        Username<br>
-        <input type = "text" name = "name" /></br>
-
-        Title<br>
-        <input type = "text" name = "title" /><br>
-
-        Image (image url, amp images will be removed)<br>
-        <input type = "text" name = "img" /><br>
-
-        Post Content<br>
-        <input type = "text" name = "post" /><br>
-
-        <input type = "submit" value = "submit" /><br>
+        <div class="form-row">
+            <div class="form-group col-md-6 ">
+                <label for="inputuser4">Username</label>
+                <input type="text" name="name" class="form-control" id="inputuser4" placeholder="Enter Username Here...">
+            </div>
+            <div class="form-group col-md-6">
+                <label for="inputTitle4">Title Of Post</label>
+                <input type="text" name="title" class="form-control" id="inputTitle4" placeholder="Enter Title Here...">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="inputImage">Image </label>
+            <input type="text" name = "img" class="form-control" id="inputImage" placeholder="Enter image url, amp images will be removed">
+        </div>
+        <div class="form-group">
+            <label for="inputPost">Post</label>
+            <input type="text" name = "post"  class="form-control" id="inputPost" placeholder="Enter Post Here...">
+        </div>
+        <button type="submit" value = "submit" class="btn btn-button">Post!</button>
     </form>
+<!--    <form action = "{{ url_for('database.addpost') }}" method = "POST">-->
+<!--        <h3>Add New Post</h3>-->
+<!--        Username<br>-->
+<!--        <input type = "text" name = "name" /></br>-->
+
+<!--        Title<br>-->
+<!--        <input type = "text" name = "title" /><br>-->
+
+<!--        Image (image url, amp images will be removed)<br>-->
+<!--        <input type = "text" name = "img" /><br>-->
+
+<!--        Post Content<br>-->
+<!--        <input type = "text" name = "post" /><br>-->
+
+<!--        <input type = "submit" value = "submit" /><br>-->
+<!--    </form>-->
 </body>
 </html>

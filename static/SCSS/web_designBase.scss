@@ -49,12 +49,16 @@ $subtext: #8ecae6;
 $button: #219ebc ;
 $btn_hov: #71c4ce;
 $body-bg: #cfd8dc;
+$table-bg: #f8f9fa;
+$table-txt: black;
 
 $theme-colors: (
         "primary": $primary,
         "header-bg": $header-bg,
         "button": $button,
-        "subtext": $subtext
+        "subtext": $subtext,
+        "table-bg": $table-bg,
+        "table-txt": $table-txt
 );
 // redefine body background
 @import "../../node_modules/bootstrap/scss/bootstrap";
@@ -74,18 +78,22 @@ html, body {
 
 
   /* redefine theme colors */
-  $primary: #3165a6;
-  $header-bg: #a367ff;
+  $primary: #274669;
+  $header-bg: #73589d;
   $subtext: #cbcbcb;
-  $button: #ff9200 ;
+  $button: #ff9300 ;
   $btn_hov: #ffbb5b;
   $body-bg: #414144;
+  $table-bg: #212529;
+  $table-txt: whitesmoke;
 
   $theme-colors: (
           "primary": $primary,
           "header-bg": $header-bg,
           "button": $button,
-          "subtext": $subtext
+          "subtext": $subtext,
+          "table-bg": $table-bg,
+          "table-txt": $table-txt
   );
 
 
