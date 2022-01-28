@@ -13,7 +13,7 @@ def database():
 
     cur = con.cursor()
     command ="""CREATE TABLE IF NOT EXISTS
-    database(name TEXT, title TEXT, img TEXT, post TEXT)"""
+    database(name TEXT, title TEXT, img TEXT, post TEXT, timestmp TEXT)"""
 
     cur.execute(command)
     cur.execute("select * from database")
@@ -33,11 +33,12 @@ def addpost():
             title = request.form['title']
             img = request.form['img']
             post = request.form['post']
+            timestmp = request.form['timestmp']
 
             with sql.connect("database.db") as con:
                 cur = con.cursor()
 
-                cur.execute("INSERT INTO database (name,title,img,post) VALUES (?,?,?,?)",(name,title,img,post) )
+                cur.execute("INSERT INTO database (name,title,img,post,timestmp) VALUES (?,?,?,?)",(name,title,img,post,timestmp) )
                 con.commit()
         except:
             con.rollback()

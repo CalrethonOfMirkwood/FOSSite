@@ -25,6 +25,10 @@ def index():
 def terminal():
     return render_template("terminal.html")
 
+@app.route('/templates/minesweeper')
+def minesweep():
+    return render_template("minesweeper.html")
+
 @app.errorhandler(500)
 def server_error(e):
     return render_template('500.html'), 500
