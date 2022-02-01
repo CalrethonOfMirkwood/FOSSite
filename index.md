@@ -45,6 +45,16 @@ Week Review Video: https://drive.google.com/file/d/13PMKKLhJQSZeFc7bavTpaQyBmh2x
 | Michael | Worked on [deployment](https://github.com/CalrethilOfMirkwood/FOSSite/wiki/Deployment). |
 | Krish | Created [site-wide layout](https://github.com/CalrethilOfMirkwood/FOSSite/blob/master/templates/layouts/layout.html) and completely reorganized website [file layout](https://github.com/CalrethilOfMirkwood/FOSSite/commit/c02599d588552ced02636a6a00bc4d9daa5d9a3d).|
 
+# Week 7
+Week Summary: FOSSchan (with a customized theme) and snake are now deployed on the website.  There is an updated, more comprehensive dark mode.  FOSSweaper is in development.
+
+| Name | Task |
+| - | :--- |
+| Sophie | Created [FOSSchan](https://github.com/CalrethilOfMirkwood/FOSSite/tree/master/database), a pseudo-forum based on SQLite similar the app Whisper where people can post anonymously.  Also helped Valerie with [snake](https://github.com/CalrethilOfMirkwood/FOSSite/commit/dcc4cf50981ef635a45e39c2a9ffbfd89c0b515e) and trying to convert it into minesweeper. |
+| Valreie | Deployed [snake](https://github.com/CalrethilOfMirkwood/FOSSite/commit/dcc4cf50981ef635a45e39c2a9ffbfd89c0b515e) on the website.  Currently trying to turn it into a minesweeper game.  Making a python mock-up with the intent to convert it into javascript for an html page. |
+| Michael | Worked on [deployment](https://github.com/CalrethilOfMirkwood/FOSSite/wiki/Deployment). |
+| Krish | Created [custom design for FOSSChan](https://github.com/CalrethilOfMirkwood/FOSSite/commit/f39d98a89910b247c42d52a415c9de42dd2f61ff) and revamped the [dark mode](https://github.com/CalrethilOfMirkwood/FOSSite/commit/f39d98a89910b247c42d52a415c9de42dd2f61ff).  FOSSchan's boxes are now properly sized and the dark mode actually darkens the webpage with aesthetically pleasing colors. |
+
 
 
 WORK IN PROGRESS - DEVELOPMENT
