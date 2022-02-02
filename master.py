@@ -29,6 +29,10 @@ def terminal():
 def minesweep():
     return render_template("minesweeper.html")
 
+@app.route('/templates/quiz')
+def quiz():
+    return render_template("quiz.html")
+
 @app.errorhandler(500)
 def server_error(e):
     return render_template('500.html'), 500
