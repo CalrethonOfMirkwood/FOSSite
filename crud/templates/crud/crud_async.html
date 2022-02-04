@@ -211,6 +211,7 @@
 <!-- CONTENT (in <body>), content for this page -->
 {% block content %}
     <div class="container py-4 text-light bg-header-bg">
+    <!-- bg-header-bg corresponds to #023047 in the SCSS file -->
         <header class="pb-3 mb-4 border-bottom">
             <div class="d-flex align-items-center text-light text-decoration-none">
                 <span class="fs-4">This is an anonymous image board where people can post anything related to Linux and other FOSS. Non-FOSS posts will be removed unless they are sufficiently funny, as deemed by the devs.</span>
@@ -219,7 +220,7 @@
 
         <div class="container py-4">
             <div class="p-5 mb-4 bg-light text-dark rounded-3">
-                <h2>Create a new record</h2>
+                <h2>Create a new post</h2>
 
                 <table class="table">
                     <thead>
@@ -234,7 +235,7 @@
                     <tr>
                         <td><input type="text" name="user" id="user" required></td>
                         <td><input type="text" name="title" id="title" required></td>
-                        <td><input type="text" name="image" id="image" required></td>
+                        <td><input type="url" name="image" id="image" required></td>
                         <td><input type="text" name="post" id="post" required></td>
                         <td ><button onclick="create_User()">Create</button></td>
 
@@ -276,7 +277,7 @@
                         <table id="update_table">
                             <tr>
                                 <th><label for="update_userid">ID</label></th>
-                                <th><label for="update_name">Name</label></th>
+                                <th><label for="update_name">User</label></th>
                             </tr>
                             <tr>
                                 <td>
@@ -324,16 +325,7 @@
         <div class="container py-4">
             <div class="p-5 mb-4 bg-light text-dark rounded-3">
                 <div class="row align-items-md-stretch">
-                    <table class="table">
-                        <tbody>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td><a href={{url_for('crud_api.crud_api')}}>Full Table </a></td>
-                            <td><a href="https://github.com/nighthawkcoders/nighthawk_csp/tree/master/crud">GitHub Source</a></td>
-                        </tr>
-                        </tbody>
-                    </table>
+                   <a href={{url_for('crud_api.crud_api')}}>Full Table </a>
                 </div>
                 <div class="row align-items-md-stretch">
                     <div class="container-fluid py-5">
@@ -351,9 +343,10 @@
                             {% for row in table %}
                                 <tr>
                                     <td>{{ row['userID'] }}</td>
-                                    <td>{{ row['user'] }}</td>
-                                    <td>{{ row['title'] }}</td>
-                                    <td><img src="{{row['img']}}" width="20%"></td>
+                                    <td width="20%">{{ row['user'] }}</td>
+                                    <td width = "40%">{{ row['title'] }}</td>
+                                    <!-- url that user enters is used to display image in database-->
+                                    <td><img src="{{ row['image'] }}" width="30%"></td>
                                     <td>{{ row['post'] }}</td>
                                 </tr>
                             {% endfor %}
