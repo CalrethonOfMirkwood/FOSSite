@@ -1,4 +1,6 @@
 flask~=1.1.2
 numpy
-requests~=2.25.1
-SQLAlchemy~=1.3.24
+requests
+flask_migrate
+flask_sqlalchemy
+sqlalchemy
