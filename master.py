@@ -35,6 +35,10 @@ def minesweep():
 def quiz():
     return render_template("quiz.html")
 
+@app.route('/templates/graph')
+def graph():
+    return render_template("graph.html")
+
 @app.errorhandler(500)
 def server_error(e):
     return render_template('500.html'), 500
