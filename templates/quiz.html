@@ -315,7 +315,7 @@
     <main>
     <div id="video_wrapper">
     <video autoplay loop>
-        <source src="https://drive.google.com/uc?export=view&id=1w4kUtoqYsylUpLU_g3oI7OtYhhPcQIiM" type="video/mp4">
+        <source src="/static/Iswearitwasn'tmewhochosethisatleastthere'snogooglelinkanymore.mp4" type="video/mp4">
     </video>
     <div id="wrapper">
         <!-- creating a modal for when quiz ends -->
@@ -330,9 +330,8 @@
                     <p>Wrong Answers : <span id="wrong-answers"></span></p>
                     <p>Right Answers : <span id="right-answers"></span></p>
                     <p>Grade : <span id="grade-percentage"></span>%</p>
-                    <p ><span id="remarks"></span></p>
                 </div>
-
+                <div class="modal-button-container" id="wrapper"><span id="remarks"></span></div>
                 <div class="modal-button-container" id="wrapper">
                     <button onclick="closeScoreModal()">Continue</button>
                 </div>
@@ -401,234 +400,215 @@
     </div>
     </div>
     <script type="text/javascript">
-    //this would be the object shape for storing the questions
-    //you can change the questions to your own taste or even add more questions..
+
     const questions = [
         {
-            question: "",
-            optionA: "",
-            optionB: "",
-            optionC: "",
-            optionD: "",
-            correctOption: ""
+            question: "What is the most universal command to access root privilages?",
+            optionA: "krill",
+            optionB: "apt-get",
+            optionC: "sudo",
+            optionD: "doas",
+            correctOption: "optionC"
         },
 
         {
-            question: "",
-            optionA: "",
-            optionB: "",
-            optionC: "",
-            optionD: "",
-            correctOption: ""
+            question: "Linux is a(n)...",
+            optionA: "operating system",
+            optionB: "kernel",
+            optionC: "hypervisor",
+            optionD: "network protocol",
+            correctOption: "optionB"
         },
 
         {
-            question: "",
-            optionA: "",
-            optionB: "",
-            optionC: "",
-            optionD: "",
-            correctOption: ""
+            question: "FOSS stands for...",
+            optionA: "Free and Open Source Software",
+            optionB: "Free and Outsorced Serfdom/Slavery",
+            optionC: "Fake Outdoors Silly Squids",
+            optionD: "*clearly fake answer that someone will choose anyways*",
+            correctOption: "optionA"
         },
 
         {
-            question: "",
-            optionA: "",
-            optionB: "",
-            optionC: "",
-            optionD: "",
-            correctOption: ""
+            question: "Who is RMS?",
+            optionA: "Not Richard Matthew Stallman",
+            optionB: "Randy Michael Stirling",
+            optionC: "Someone who belongs in GNU",
+            optionD: "Rachel Michelle Samson",
+            correctOption: "optionC"
         },
 
         {
-            question: "",
-            optionA: "",
-            optionB: "",
-            optionC: "",
-            optionD: "",
-            correctOption: ""
+            question: "Which of the following characters can 'combine' several commands?",
+            optionA: "pipe - |",
+            optionB: "semicolon - ;",
+            optionC: "en-dash - -",
+            optionD: "backslash - /",
+            correctOption: "optionA"
         },
 
         {
-            question: "",
-            optionA: "",
-            optionB: "",
-            optionC: "",
-            optionD: "",
-            correctOption: ""
+            question: "Linux can run on every computer.",
+            optionA: "True with customized BIOS.",
+            optionB: "False, can only run on designated Linux computers.",
+            optionC: "True without exceptions.",
+            optionD: "False, Linux has UEFI as a prerequisite.",
+            correctOption: "optionC"
         },
 
         {
-            question: "",
-            optionA: "",
-            optionB: "",
-            optionC: "",
-            optionD: "",
-            correctOption: ""
+            question: "A derivative of Ubuntu made to be more user-friendly is called...",
+            optionA: "AmogOS",
+            optionB: "LFS",
+            optionC: "Kubuntu",
+            optionD: "Linux Mint",
+            correctOption: "optionD"
         },
 
         {
-            question: "",
-            optionA: "",
-            optionB: "",
-            optionC: "",
-            optionD: "",
-            correctOption: ""
+            question: "Which license is arguably most commercial-friendly, meaning the software licensed under it can be commercialized?",
+            optionA: "MIT License",
+            optionB: "GNU GPL 3",
+            optionC: "Creative Commons licences",
+            optionD: "AGPL",
+            correctOption: "optionA"
         },
 
         {
-            question: "1111",
-            optionA: "",
-            optionB: "",
-            optionC: "",
-            optionD: "",
-            correctOption: ""
+            question: "?",
+            optionA: "Linux",
+            optionB: "Windows",
+            optionC: "Mac",
+            optionD: "ChromeOS",
+            correctOption: "optionA"
         },
 
         {
-            question: `"`,
-            optionA: "",
-            optionB: "",
-            optionC: "",
-            optionD: "",
-            correctOption: ""
+            question: "IntelliJ IDEA is FOSS.",
+            optionA: "False, open-source but proprietary.",
+            optionB: "True, very FOSS.",
+            optionC: "False,closed-source and proprietary.",
+            optionD: "False, free but not open-source.",
+            correctOption: "optionA"
         },
 
         {
-            question: "",
-            optionA: "",
-            optionB: "",
-            optionC: "",
-            optionD: "",
-            correctOption: ""
+            question: "GitHub is FOSS.",
+            optionA: "False, proprietary and non-free JS.",
+            optionB: "True, FOSS but non-free JS.",
+            optionC: "False, owned by Meta.",
+            optionD: "True, very FOSS.",
+            correctOption: "optionA"
         },
 
         {
-            question: "",
-            optionA: "",
-            optionB: "",
-            optionC: "",
-            optionD: "",
-            correctOption: ""
+            question: "Join us now and...",
+            optionA: "bring about the revolution.",
+            optionB: "indulge in mindless consumerism, further alienating ourselves from painful reality.",
+            optionC: "use FOSS everyday.",
+            optionD: "share the software.",
+            correctOption: "optionD"
         },
 
 
         {
-            question: "",
-            optionA: "",
-            optionB: "",
-            optionC: "",
-            optionD: "",
-            correctOption: ""
+            question: "Which of these phones are FOSS?",
+            optionA: "iPhone",
+            optionB: "PinePhone",
+            optionC: "Google Pixel",
+            optionD: "Blackberry",
+            correctOption: "optionB"
         },
 
         {
-            question: "",
-            optionA: "",
-            optionB: "",
-            optionC: "",
-            optionD: "",
-            correctOption: ""
+            question: "Which of these is not a Linux distribution?",
+            optionA: "Fedora",
+            optionB: "Gentoo",
+            optionC: "Varda",
+            optionD: "Debian",
+            correctOption: "optionC"
         },
 
         {
-            question: "",
-            optionA: "",
-            optionB: "",
-            optionC: "",
-            optionD: "",
-            correctOption: ""
+            question: "Many browsers are based on ___, a FOSS fork of the popular, proprietary Google Chrome.",
+            optionA: "Firefox",
+            optionB: "IceCat",
+            optionC: "Chromium",
+            optionD: "Oprah",
+            correctOption: "optionC"
         },
 
         {
-            question: "",
-            optionA: "",
-            optionB: "",
-            optionC: "",
-            optionD: "",
-            correctOption: ""
+            question: "An example of a commercially successful FOSS company is...",
+            optionA: "RedHat",
+            optionB: "JetBrains",
+            optionC: "GitHub",
+            optionD: "Microsoft",
+            correctOption: "optionA"
         },
 
         {
-            question: "",
-            optionA: "",
-            optionB: "",
-            optionC: "",
-            optionD: "",
-            correctOption: ""
+            question: "Debian formerly had a very strict policy of FOSS, so FireFox had to be rebranded to be non-proprietary.  This rebranded browser was called...",
+            optionA: "Trick q - FireFox is FOSS.",
+            optionB: "FoxyFOSS",
+            optionC: "IceWeasel",
+            optionD: "Orion",
+            correctOption: "optionC"
         },
 
         {
-            question: "",
-            optionA: "",
-            optionB: "",
-            optionC: "",
-            optionD: "",
-            correctOption: ""
+            question: "A well-known organization dedicated to promoting FOSS, founded by RMS, is...",
+            optionA: "Canonical",
+            optionB: "The Linux Foundation",
+            optionC: "The GNU Project",
+            optionD: "Google",
+            correctOption: "optionC"
         },
 
         {
-            question: "",
-            optionA: "",
-            optionB: "",
+            question: "What does GNU stand for?",
+            optionA: "General Non-Unix (software)",
+            optionB: "GNU's Not Unix!",
             optionC: "",
-            optionD: "",
-            correctOption: ""
+            optionD: "Gensokyo Nondiscrimination Unity",
+            correctOption: "optionB"
         },
 
         {
-            question: "",
-            optionA: "",
-            optionB: "",
-            optionC: "",
-            optionD: "",
-            correctOption: ""
+            question: "Ubuntu is FOSS.",
+            optionA: "Strongly true.",
+            optionB: "Mostly true.",
+            optionC: "Mostly false.",
+            optionD: "Strongly false.",
+            correctOption: "optionB"
         },
 
         {
-            question: "",
-            optionA: "",
-            optionB: "",
-            optionC: "",
-            optionD: "",
-            correctOption: ""
+            question: "Linus Torvalds claims he got inspiration to make the mascot of Linux a penguin from...",
+            optionA: "traveling to the North Pole the summer before creating Linux.",
+            optionB: "catching 'penguinitis' from a penguin bite at the zoo.",
+            optionC: "an autistic special interest in penguins.",
+            optionD: "a marine biologist classmate who was writing his research thesis on penguins.",
+            correctOption: "optionB"
         },
 
         {
-            question: "",
-            optionA: "",
-            optionB: "",
-            optionC: "",
-            optionD: "",
-            correctOption: ""
+            question: "Google's former motto was...",
+            optionA: "Do the right thing.",
+            optionB: "Do no evil.",
+            optionC: "Do good.",
+            optionD: "Don't be evil.",
+            correctOption: "optionD"
         },
 
         {
-            question: "",
-            optionA: "",
-            optionB: "",
-            optionC: "",
-            optionD: "",
-            correctOption: ""
+            question: "Which of these is a FOSS alternative to YouTube?",
+            optionA: "NewPipe",
+            optionB: "Parler",
+            optionC: "Signal",
+            optionD: "Odysee",
+            correctOption: "optionD"
         },
-
-        {
-            question: "",
-            optionA: "",
-            optionB: "",
-            optionC: "",
-            optionD: "",
-            correctOption: ""
-        },
-
-        {
-            question: "",
-            optionA: "",
-            optionB: "",
-            optionC: "",
-            optionD: "",
-            correctOption: ""
-        }
 
     ]
 
@@ -713,7 +693,6 @@
     }
 
 
-
     //called when the next button is called
     function handleNextQuestion() {
         checkForAnswer() //check if player picked right or wrong option
@@ -754,15 +733,15 @@
 
         // condition check for player remark and remark color
         if (playerScore <= 3) {
-            remark = "Bad Grades, Keep Practicing."
+            remark = "Keep Practicing."
             remarkColor = "red"
         }
         else if (playerScore >= 4 && playerScore < 7) {
-            remark = "Average Grades, You can do better."
+            remark = "You can do better."
             remarkColor = "orange"
         }
         else if (playerScore >= 7) {
-            remark = "Excellent, Keep the good work going."
+            remark = "Keep the good work going."
             remarkColor = "green"
         }
         const playerGrade = (playerScore / 10) * 100
