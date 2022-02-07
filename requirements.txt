@@ -1,6 +1,7 @@
-flask~=1.1.2
+flask
 numpy
 requests
+flask_restful
 flask_migrate
 flask_sqlalchemy
 sqlalchemy
