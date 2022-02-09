@@ -27,15 +27,15 @@ def index():
 def terminal():
     return render_template("terminal.html")
 
-@app.route('/templates/minesweeper')
+@app.route('/minesweeper')
 def minesweep():
     return render_template("minesweeper.html")
 
-@app.route('/templates/quiz')
+@app.route('/quiz')
 def quiz():
     return render_template("quiz.html")
 
-@app.route('/templates/graph')
+@app.route('/graph')
 def graph():
     return render_template("graph.html")
 
