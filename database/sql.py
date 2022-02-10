@@ -1,7 +1,5 @@
 from app import db
-from crud.model import Users
-# import random
-
+from database.model import Users # nonexistent
 
 # this is method called by frontend, it has been randomized between Alchemy and Native SQL for fun
 def users_all():

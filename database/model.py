@@ -81,15 +81,9 @@ def model_tester():
     print("--------------------------")
     db.create_all()
     """Tester data for table"""
-    u1 = Users(user='Thomas Edison', title='test', image='https://upload.wikimedia.org/wikipedia/commons/thumb/3/35'
-                                                         '/Tux.svg/800px-Tux.svg.png', post="1111111111")
-    u2 = Users(user='Nicholas Tesla', title='hello', image='https://cdn.vox-cdn.com/thumbor/Pkmq1nm3skO0'
-                                                           '-j693JTMd7RL0Zk=/0x0:2012x1341/1200x800/filters:focal('
-                                                           '0x0:2012x1341)/cdn.vox-cdn.com/uploads/chorus_image/image'
-                                                           '/47070706/google2.0.0.jpg', post="1111112222")
-    u3 = Users(user='joe', title='hola', image='https://wordtracker-swoop-uploads.s3.amazonaws.com/uploads/ckeditor'
-                                               '/pictures/2105/content_cool_urls_2.png', post="1111sdfsdsdfs222")
-    table = [u1, u2, u3]
+    u1 = Users(user='Thomas Edison', title='test', image='/static/GOOGLEBAD.png', post="1111111111")
+    u2 = Users(user='Nicholas Tesla', title='hello', image='/static/GOOGLEBAD.png', post="1111112222")
+    table = [u1, u2]
     for row in table:
         try:
             db.session.add(row)
