@@ -12,6 +12,7 @@ FOSSite was created with the hope of exposing the general public to the idea of 
 - [Week 2](#week-2)
 
 ## The People
+
 | Name | Role | Github Profile | Journal | Issues | Scrum Board | Commit History |
 | - | - | - | - | - | - | - |
 | Sophie Soyeon Park | Scrum Master | [@CalrethilOfMirkwood](https://github.com/CalrethilOfMirkwood) | [Journal](https://docs.google.com/document/d/1pevIAx6l1T2paGKv7fC8DbOfuA8IS8x0SDsPHH6GK3E/edit?usp=sharing) | [Issues](https://github.com/CalrethilOfMirkwood/FOSSite/issues?q=assignee%3ACalrethilOfMirkwood) | [Scrum Board](https://github.com/CalrethilOfMirkwood/FOSSite/projects/1?card_filter_query=assignee%3ACalrethilOfMirkwood) | [Commits](https://github.com/CalrethilOfMirkwood/FOSSite/commits?author=CalrethilOfMirkwood) |
@@ -21,6 +22,7 @@ FOSSite was created with the hope of exposing the general public to the idea of 
 
 # Week 1
 Most of week 1 was spent on ideation and planning the course.
+
 | Name | Task |
 | - | :--- |
 | Sophie | Sophie worked with Valerie to create a rough outline of the [course syllabus](https://docs.google.com/document/d/1Z1GYSwubeXHscKTN5EzRGT2B-IAYzG0vddGxIzL9HNA/edit?skip_itp2_check=true).  She also made her [about page](https://github.com/CalrethilOfMirkwood/FOSSite/issues/2) with a [reddit API](https://github.com/CalrethilOfMirkwood/FOSSite/tree/master/silmarillionmemes.py) (the [error 500 page](https://github.com/CalrethilOfMirkwood/FOSSite/blob/master/templates/500.html) links to an alternative page without the API for school wifi). |
@@ -30,6 +32,7 @@ Most of week 1 was spent on ideation and planning the course.
 
 # Week 2
 Week Summary: Added fully functional about me pages, created navbar to extend across all pages, created base color pallete for website in layout.html, created front landing page 
+
 | Name | Task |
 | - | :--- |
 | Sophie | Created [image toggle function](https://github.com/CalrethilOfMirkwood/FOSSite/blob/master/templates/abt_pages/sophie.html#L18-L31), put it on other team members' pages, and finalized [about page](https://github.com/CalrethilOfMirkwood/FOSSite/blob/master/templates/abt_pages/sophie.html). |
@@ -57,3 +60,13 @@ Week Summary: FOSSchan (with a customized theme) and snake are now deployed on t
 | Valreie | Deployed [snake](https://github.com/CalrethilOfMirkwood/FOSSite/commit/dcc4cf50981ef635a45e39c2a9ffbfd89c0b515e) on the website.  Currently trying to turn it into a minesweeper game.  Making a python mock-up with the intent to convert it into javascript for an html page. |
 | Michael | Worked on [deployment](https://github.com/CalrethilOfMirkwood/FOSSite/wiki/Deployment). |
 | Krish | Created [custom design for FOSSChan](https://github.com/CalrethilOfMirkwood/FOSSite/commit/f39d98a89910b247c42d52a415c9de42dd2f61ff) and revamped the [dark mode](https://github.com/CalrethilOfMirkwood/FOSSite/commit/f39d98a89910b247c42d52a415c9de42dd2f61ff).  FOSSchan's boxes are now properly sized and the dark mode actually darkens the webpage with aesthetically pleasing colors. |
+
+# Week 8
+Week Summary: Crossover coding, got CRUD+asynchronous database deployed and how succesful it was is debatable.
+
+| Name | Task |
+| - | :--- |
+| Rebecca | Got the CRUD+asynchronous database deployed. | <!-- The database is not real.  It never existed. -->
+| Gabriel | Created the searchbar. It searches through through a page index with linear search. | <!-- Never committed... -->
+| Tianbin | Got the quiz going, it is multiple choice+score tracking+randomizing with an aesthetic video background. | <!-- genshin impact -->
+| Sophie | Tried to get the terminal actually functional. Wasn't able to do that but wrote the questions for the quiz. | <!-- My ego is too fat for this. -->
