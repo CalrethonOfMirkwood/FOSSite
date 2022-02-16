@@ -6,35 +6,19 @@
     <meta charset="UTF-8">
     <title>Terminal Emulator</title>
     <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
-    <link rel='stylesheet' href='/terminal/normalize.css'>
-    <link rel='stylesheet' href='/terminal/master.css'>
+    <link rel='stylesheet' href='/static/terminal/normalize.css'>
+    <link rel='stylesheet' href='/static/terminal/master.css'>
 </head>
 {% endblock %}
-<body>
-<audio autoplay loop>
-    <source src="/static/freesoftware.mp3">
-</audio>
+<body onload="alert('This terminal is by Rohan Chandra at https://github.com/rohanchandra/javascript-terminal.');">
 
 <div id='output-wrapper'></div>
 
 <div class='input-wrapper'>
-    <span>$&nbsp;</span><input id='terminput' type='text' autofocus/>
+    <span>$&nbsp;</span><input id='input' type='text' autofocus/>
 </div>
-<button id="Enter">Enter</button>
-<script>
-    $("#pass").keyup(function(event) {
-        if (event.keyCode === 13) {
-            $("#Enter").click();
-        }
-    });
 
-    $("#Enter").click(function() {
-        var amongus = document.getElementById("terminput").value;
-        alert(amongus); //i suffer from depression
-    });
-</script>
-
-<script src='/terminal/terminal.js'></script>
-<script src='/terminal/master.js'></script>
+<script src='/static/terminal/terminal.js'></script>
+<script src='/static/terminal/master.js'></script>
 </body>
 </html>

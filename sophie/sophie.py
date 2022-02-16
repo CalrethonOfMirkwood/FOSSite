@@ -1,4 +1,4 @@
-from flask import Blueprint, Flask, render_template, request
+from flask import Blueprint, render_template
 from .silmarillionmemes import getSilmMeme, noldolante
 
 
