@@ -37,6 +37,10 @@ def quiz():
 def graph():
     return render_template("graph.html")
 
+@app.route('/war')
+def war():
+    return render_template("war.html")
+
 @app.errorhandler(500)
 def server_error(e):
     return render_template('500.html'), 500
