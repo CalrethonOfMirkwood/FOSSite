@@ -5,9 +5,22 @@
             <a class="nav-link text-light" href="{{ url_for('terminal') }}">Terminal Emulator</a>
             <a class="nav-link text-light" href="{{ url_for('krish.linux_intro') }}">Linux</a>
             <a class="nav-link text-light" href="{{ url_for('database.database') }}">FOSSchan</a>
-            <a class="nav-link text-light" href="{{ url_for('minesweep') }}">Minesweeper</a>
-            <a class="nav-link text-light" href="{{ url_for('graph') }}">Graph</a>
-            <a class="nav-link text-light" href="{{ url_for('quiz') }}">Quiz</a>
+
+
+        <div class="collapse navbar-collapse text-light" id="navbarNavLightDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarLightDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Learn Linux!
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarLightDropdownMenuLink">
+                        <li><a class="nav-link text-light" href="{{ url_for('minesweep') }}">Minesweeper</a></li>
+                        <li><a class="nav-link text-light" href="{{ url_for('graph') }}">Graph</a></li>
+                        <li><a class="nav-link text-light" href="{{ url_for('quiz') }}">Quiz</a></li>
+                        <li><a class="nav-link text-light" href="{{ url_for('war') }}">War</a></li>
+                    </ul>
+                </li>
+            </ul>
 
             <!-- <a class="nav-link text-light" href="{{ url_for('database.crud_api') }}">FOSSchan2</a>
             FOSSchan2 is not real. It never existed. -->
@@ -22,7 +35,7 @@
                 <ul class="navbar-nav">
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarLightDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Starters
+                            About Us
                         </a>
                         <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarLightDropdownMenuLink">
                             <li><a class="dropdown-item" href={{ url_for('krish.krish') }}>Krish</a></li>
