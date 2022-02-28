@@ -1,14 +1,10 @@
 # Create Task - Linux Quiz 
 
 ## 1. Code
-Note- The extended Jinja blocks have an additional "." in order to prevent errors from being raised in jekyll format
+Note- The extende Jinja blocks have been removed form code due to errors being raised in Jekyll
 ### HTML
 ```
 <!DOCTYPE html>
-{% extends "layouts/layout.html" .%}
-
-{% block content .%}
-
 <body>
     <!--Page Intro-->
     <h1 class="display-3 text-center" >Linux Proficiency Quiz</h1>
@@ -77,7 +73,7 @@ Note- The extended Jinja blocks have an additional "." in order to prevent error
 <!--JS for checking user answers-->
 <script src={{  url_for("krish.static", filename="Fquiz_a.js", version='149') }}></script>
 
-{% endblock .%}
+
 ```
 
 ### Javascript for question shuffle 
