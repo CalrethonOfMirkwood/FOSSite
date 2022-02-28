@@ -4,9 +4,9 @@
 ### HTML
 ```
 <!DOCTYPE html>
-{% extends "layouts/layout.html" %}
+{% extends "layouts/layout.html" .%}
 
-{% block content %}
+{% block content .%}
 
 <body>
     <!--Page Intro-->
