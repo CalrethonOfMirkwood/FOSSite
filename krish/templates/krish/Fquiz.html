@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+{% extends "layouts/layout.html" %}
+
+{% block content %}
+
+<body>
+    <!--Page Intro-->
+    <h1 class="display-3 text-center" >Linux Proficiency Quiz</h1>
+    <h3 class="lead text-center">This is a quiz that will determine your aptitude with Linux. Answer all 5 questions to the best of your ability and then press the submit button. After that, your total score will be given down below, and should you choose to receive a complex review by pressing the complex review button, you will receive specific scores based on your ability to complete questions about linux commands in specific, and general knowledge about linux</h3>
+
+    <br>
+
+    <!--Scoring Area-->
+    <div class="container text-center">
+        <div class="row">
+            <div class="col">
+                Total Score
+            </div>
+            <div class="col">
+                General Linux Proficiency
+            </div>
+            <div class="col">
+                Linux Terminal Command Proficiency
+            </div>
+        </div>
+        <div class="row">
+            <div class="col" id="total_scr"></div>
+            <div class="col" id="genProf_scr"></div>
+            <div class="col" id="code_scr"></div>
+        </div>
+    </div>
+
+    <br>
+    <br>
+
+    <!--Form input for each question-->
+    <form class="text-center">
+        <h3 id="Q0"></h3>
+        <input type = "text" id="A0">
+        <h5 id="I0"></h5>
+
+        <br>
+
+        <h3 id="Q1"></h3>
+        <input type = "text" id="A1">
+        <h5 id="I1"></h5>
+
+        <br>
+
+        <h3 id="Q2"></h3>
+        <input type = "text" id="A2">
+        <h5 id="I2"></h5>
+
+        <br>
+
+        <h3 id="Q3"></h3>
+        <input type = "text" id="A3">
+        <h5 id="I3"></h5>
+
+        <br>
+
+
+        <input type = "button" onclick="CheckAns('simple')" value="Simple Review!">
+        <input type = "button" onclick="CheckAns('complex')" value="Complex Review!">
+        <br>
+    </form>
+</body>
+
+<!--JS for randomizing+selecting questions-->
+<script src={{  url_for("krish.static", filename="Fquiz_q.js", version='147') }}></script>
+<!--JS for checking user answers-->
+<script src={{  url_for("krish.static", filename="Fquiz_a.js", version='149') }}></script>
+
+{% endblock %}

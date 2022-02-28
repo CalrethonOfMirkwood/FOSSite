@@ -40,3 +40,7 @@ def linux_intro():
 @app_krish.route('/linux_history')
 def linux_history():
     return render_template("linux_history.html")
+
+@app_krish.route('/Fquiz')
+def Fquiz():
+    return render_template("Fquiz.html")
