@@ -5,3 +5,4 @@ flask_restful
 flask_migrate
 flask_sqlalchemy
 sqlalchemy
+pygame
