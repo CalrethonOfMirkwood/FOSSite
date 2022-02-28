@@ -1,6 +1,7 @@
 # Create Task - Linux Quiz 
 
 ## 1. Code
+Note- The extended Jinja blocks have an additional "." in order to prevent errors from being raised in jekyll format
 ### HTML
 ```
 <!DOCTYPE html>
@@ -76,7 +77,7 @@
 <!--JS for checking user answers-->
 <script src={{  url_for("krish.static", filename="Fquiz_a.js", version='149') }}></script>
 
-{% endblock %}
+{% endblock .%}
 ```
 
 ### Javascript for question shuffle 
