@@ -4,7 +4,7 @@ from flask_migrate import Migrate
 
 """This needs to be isolated to support blueprints and models"""
 app = Flask(__name__)
-dbURI = 'sqlite:///model/myDB.db'
+dbURI = 'sqlite:///database/myDB.db'
 # Setup properties for the database
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['SQLALCHEMY_DATABASE_URI'] = dbURI
