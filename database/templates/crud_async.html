@@ -20,7 +20,7 @@
                 },
             };
             //url for Create API
-            const url='/crud_api/create/' + user + '/' + title + '/' + image + '/' + post;
+            const url='/FOSSchan/create/' + user + '/' + title + '/' + image + '/' + post;
             //Async fetch API call to the database to create a new user
             fetch(url, requestOptions).then(response => {
                 // prepare HTML search result container for new output
@@ -73,7 +73,7 @@
             const get_userid = document.getElementById("read_userid");
             const userID = get_userid.value;
             //url for Read API
-            const url='/crud_api/read/' + userID;
+            const url='/FOSSchan/read/' + userID;
             const requestOptions = {
                 method: 'GET',
             };
@@ -120,7 +120,7 @@
             const username = document.getElementById("update_name").value;
             const userid = document.getElementById("update_userid").value;
             //url for Update API
-            const url = '/crud_api/update/' + userid + '/' + username;
+            const url = '/FOSSchan/update/' + userid + '/' + username;
             const requestOptions = {
                 method: 'PUT',
                 headers: {
@@ -165,7 +165,7 @@
         function delete_User(){
             const userid = document.getElementById("delete_userid").value;
             //url for Delete API
-            const url = '/crud_api/delete/' + userid;
+            const url = '/FOSSchan/delete/' + userid;
             const requestOptions = {
                 method: 'DELETE',
                 headers: {
@@ -325,7 +325,7 @@
         <div class="container py-4">
             <div class="p-5 mb-4 bg-light text-dark rounded-3">
                 <div class="row align-items-md-stretch">
-                   <a href={{url_for('database.crud_api')}}>Full Table </a>
+                   <a href={{url_for('database.crud_api')}}>Full Table</a>
                 </div>
                 <div class="row align-items-md-stretch">
                     <div class="container-fluid py-5">

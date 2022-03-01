@@ -1,7 +1,7 @@
 from flask import render_template, Blueprint, request
 from flask_restful import Api, Resource
 from database.model import Users
-from database.app import db
+from app import db
 import sqlite3
 import random
 
@@ -18,10 +18,13 @@ def users_all_alc():
 def sqlquery_2_list(rows):
     out_list = []
     keys = rows.keys()  # "Keys" are the columns of the sql query
+    print(keys)
     for values in rows:  # "Values" are rows within the SQL database
         row_dictionary = {}
-        for i in range(len(keys)):  # This loop lines up K, V pairs, same as JSON style
-            row_dictionary[keys[i]] = values[i]
+        count=0
+        for i in keys:  # This loop lines up K, V pairs, same as JSON style
+            row_dictionary[i] = values[count]
+            count+=1
         row_dictionary["query"] = "by_sql"  # This is for fun a little watermark
         out_list.append(row_dictionary)  # Finally we have a out_list row
     return out_list
@@ -145,7 +148,7 @@ class UsersAPI:
 
 @app_database.route('/')
 def database():
-    con = sqlite3.connect("database.db")
+    con = sqlite3.connect("/database/database.db")
     con.row_factory = sqlite3.Row
 
     cur = con.cursor()

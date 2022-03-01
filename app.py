@@ -3,7 +3,7 @@ from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
 
-file_path = os.path.abspath(os.getcwd())+'/database/myDB.db'
+file_path = os.path.abspath(os.getcwd())+'/database/FOSSchan2.db'
 
 """This needs to be isolated to support blueprints and models"""
 app = Flask(__name__)
