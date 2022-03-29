@@ -1,10 +1,12 @@
 # FOSSite
 FOSSite is a project to teach the basics of Linux to spread awareness of the Free and Open Source Software movement.
 
-FOSSite was created with the hope of exposing the general public to the idea of free and open source software. FOSS itself stands for the ideals of software that is accessible to the public and software that allows users to have full control of their software.  We believe that people should not have to restrict their choices to software given in the name of financial gain of the company alone. We believe that instructing the population on FOSS is a moral and social imperative. h
+FOSSite was created with the hope of exposing the general public to the idea of free and open source software. FOSS itself stands for the ideals of software that is accessible to the public and software that allows users to have full control of their software.  We believe that people should not have to restrict their choices to software given in the name of financial gain of the company alone. We believe that instructing the population on FOSS is a moral and social imperative. 
 
-## Runtime: 🇹🇰 http://fossite.tk 🇹🇰  (for some dumb reason, our school's firewall blocks our website idk why 💀)
-## Jekyll README: https://readme.fossite.tk
+## Runtime: 🇹🇰 ~~http://fossite.tk~~ 🇹🇰  **Server/website has now shut down. Links leading to our site will no longer work. Please read below.** 
+## Jekyll README: ~~https://readme.fossite.tk~~ 
+### **Server status:**
+This repo was made as a project to work on during our 2nd trimester computer science class in 2021-2022. That trimester has ended, and as such, so has the development of this project. Because there is no reason to keep the web server up and running, we have shut it down. Any links leading to our site will no longer work and will timeout. If you want to learn more about free and open source software and Linux, visit: https://itsfoss.com/ or any Linux related sites and/or YouTubers (Like DistroTube, TechHut, Mental Outlaw, etc)
 
 # Table of Contents
 - [The People](#the-people)
